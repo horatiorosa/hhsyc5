@@ -1,0 +1,62 @@
+ <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">HHSYC - Company Structure
+                    <!-- <small>founded in 2001</small> -->
+                </h1>
+                <ol class="breadcrumb">
+                    <li><%=link_to 'Home', welcome_path %>
+                    </li>  /  
+                    <%= link_to "back to About Us", aboutus_path, class: "active" %>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Sidebar Column -->
+                <%= render 'shared/sidebar_column' %>
+            <!-- Content Column -->
+            <div class="col-md-9">
+            	<div class="stylestatic">
+	             	<!-- <h2> text </h2> -->
+
+	             	<ul>
+	             		<h5>BOARD OF DIRECTORS</h5>
+	             	<li>CHARLES FISHER, Founder &nbsp; &nbsp <%= link_to "(bio)", cf_bio_path %></li>
+	             	<li>Jermaine LaMont, Co-Program Director </li>
+                <li>Latifah Johnson, Co-Program Director</li>
+                <li>Michelle M. Garcia, Director, Latin Division</li>   
+              </ul>
+              <br><br>
+              	<ul>
+	             		<h5>ADVISORY BOARD</h5>
+		             	<li>"The Shark" Daymond John</li>
+		             	<li>Denise Adams</li>
+	                <li>Marva Allen</li>
+	                <li>Marilyn Artis</li>
+	                <li>Dr. Marc Johnson</li>
+	                <li>Quincy Jones</li>
+	                <li>Dawn Kelly </li>
+	                <li>Jose Nino</li>
+	                <li>Russell Simmons</li>
+	                <li>Leah Wilcox, NBA</li>
+              </ul>
+              <ul>
+	             		<h5>STAFF</h5>
+		             	<li>RANDY FISHER, Executive Director</li>
+		             	<li>Jermaine LaMont, Co-Program Director </li>
+	                <li>Latifah Johnson, Co-Program Director </li>
+	                <li>MMichelle M. Garcia, Director, Latin Division </li>
+              </ul>
+	              
+			        </div>	
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
