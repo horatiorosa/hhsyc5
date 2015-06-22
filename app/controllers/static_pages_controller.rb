@@ -38,6 +38,9 @@ class StaticPagesController < ApplicationController
   def juneteenth
   end
 
+  def eteam
+  end
+
 
 
 

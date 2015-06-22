@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get 'projects', to: 'static_pages#projects'
   get 'ebobc', to: 'static_pages#ebobc'
   get 'juneteenth', to: 'static_pages#juneteenth'
+  get 'eteam', to: 'static_pages#eteam'
   
   
   get 'welcome', to: 'welcome#index'
