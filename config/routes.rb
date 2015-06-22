@@ -4,17 +4,23 @@ Rails.application.routes.draw do
       
   
   get 'admins_fisher', to: 'admins#index'
+
   get 'aboutus', to: 'static_pages#aboutus'
+  get 'mission', to: 'static_pages#mission'
   get 'company_history', to: 'static_pages#company_history'
   get 'company_structure', to: 'static_pages#company_structure'
   get 'cf_bio', to: 'static_pages#cf_bio'
   get 'rf_bio', to: 'static_pages#rf_bio'
   get 'hysyc_divisions', to: 'static_pages#hhsyc_divisions'
+  get 'map', to: 'static_pages#map'
+  get 'ccd', to: 'static_pages#ccd'
+  get 'red', to: 'static_pages#red'
   
-
-  get 'ebobc', to: 'static_pages#ebobc'
-  get 'mission', to: 'static_pages#mission'
   get 'projects', to: 'static_pages#projects'
+  get 'ebobc', to: 'static_pages#ebobc'
+  get 'juneteenth', to: 'static_pages#juneteenth'
+  
+  
   get 'welcome', to: 'welcome#index'
   
 

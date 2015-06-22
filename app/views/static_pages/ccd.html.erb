@@ -1,0 +1,47 @@
+ <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">HHSYC - Camp Celebrity  Division
+                    <!-- <small>founded in 2001</small> -->
+                </h1>
+                <ol class="breadcrumb">
+                    <li><%=link_to 'Home', welcome_path %>
+                    </li>  &middot;  
+                    <%= link_to "back to About Us", aboutus_path, class: "active" %>
+                    </li>  &middot;  
+                    <%= link_to "Advisors & Parents (M.A.P)", map_path, class: "active" %>
+                    </li>  &middot;  
+                    <%= link_to "Camp Celebrity  Division", ccd_path, class: "active" %>
+                    </li>  &middot;  
+                    <%= link_to "Reality Education Division", red_path, class: "active" %>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Sidebar Column -->
+                <%= render 'shared/sidebar_column' %>
+            <!-- Content Column -->
+            <div class="col-md-9">
+            	<div class="stylestatic">
+	             	<!-- <h3>MISSION STATEMENT</h3> -->
+	                <p>
+	          			Since 1998, Camp Celebrity which is now a division of the Hip-Hop Summit Youth Council offers a free camping experience, along with a host of other services to youths 8-16 years of age.  Our objective is to address the needs of our youth struggling in communities infested with drugs, crime, violence, unemployment and economic decay.  After successfully launching the Camp Cool J Foundation from 1992-97, for Hip-Hop icon LL Cool J, we felt a genuine need to offer Camp Celebrity, especially during the summer months when our youth are not in school.        
+	      			</p>
+                    <p>
+                        In order to save this generation of youth, we must provide them with programs that build character, leadership and self-esteem.  We will accomplish this by conducting an integrated curriculum consisting of education, career development, cultural enrichment, outdoor skills, sports and recreation.
+                    </p>
+                    <p>
+                        At Camp Celebrity, participants will have fun and gain experiences in an environment free of turbulence and the distractions of the inner city.  They will be able to focus their energy towards acquiring the skills needed to address the many issues they are confronted with daily so they can become productive members of our society.
+                    </p>
+			        </div>	
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>

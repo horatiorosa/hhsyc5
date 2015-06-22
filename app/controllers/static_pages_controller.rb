@@ -2,9 +2,6 @@ class StaticPagesController < ApplicationController
   def aboutus
   end
 
-  def ebobc
-  end
-
   def mission
   end
 
@@ -23,6 +20,26 @@ class StaticPagesController < ApplicationController
   def hhsyc_divisions
   end
 
+  def map
+  end
+
+  def ccd
+  end
+
+  def red
+  end
+
   def projects
   end
+
+  def ebobc
+  end
+
+  def juneteenth
+  end
+
+
+
+
+
 end

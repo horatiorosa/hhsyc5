@@ -1,0 +1,50 @@
+ <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">HHSYC - Reality Education Division
+                    <!-- <small>founded in 2001</small> -->
+                </h1>
+                <ol class="breadcrumb">
+                    <li><%=link_to 'Home', welcome_path %>
+                    </li>  &middot;  
+                    <%= link_to "back to About Us", aboutus_path, class: "active" %>
+                    </li>  &middot;  
+                    <%= link_to "Advisors & Parents (M.A.P)", map_path, class: "active" %>
+                    </li>  &middot;  
+                    <%= link_to "Camp Celebrity  Division", ccd_path, class: "active" %>
+                    </li>  &middot;  
+                    <%= link_to "Reality Education Division", red_path, class: "active" %>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Sidebar Column -->
+                <%= render 'shared/sidebar_column' %>
+            <!-- Content Column -->
+            <div class="col-md-9">
+            	<div class="stylestatic">
+	             	<!-- <h3>MISSION STATEMENT</h3> -->
+	                <p>
+		          			The multi-billion dollar Hip-Hop industry is the greatest international cultural phenomenon ever created.  It transcends all racial, ethnic, religious and cultural backgrounds and is the way of life for our youth and young adults.  With all the negativity surrounding Hip-Hop many are unaware that Love; Respect; Peace and Unity are the forgotten characteristics that gave birth to its four basic pillars which include: DJ’ing; MC’ing; Breakdancing; and Graffiti.  Collectively, they are the Body & Soul of the culture.        
+	      					</p>
+                  <p>
+                    America is the greatest country on earth, but is built on a culture that glorifies sex, drugs, guns and violence.  Each has contributed to the decay of our youth and young adults.  To address some of the life threatening problems they are confronted with daily we will launch our Hip-Hop Reality Education project and tour.  With Hip-Hop now being taught in schools and universities throughout the country we will use it as an educational tool to teach participants about Drugs, Guns, Gang Violence, HIV/AIDS, Character Education, Politics, and Economics.  This new innovative concept appeals to the intelligence and sophistication of our youth as opposed to the obsolete “Fear Tactics” used by the “Scared Straight” programs of the 70’s.  That methodology of intimidation is not as effective today because our youth are desensitized from television, film, music, Internet and videogame violence.  Through this project they will better understand how to separate the Realities of the street from the art of Entertainment to improve the quality of their life.
+                   </p>
+                   <p>
+                   	Celebrities, Professional Athletes, Politicians, Executives, Clergy, Law Enforcement Officers, Community Leaders and Ex-offenders will work together to reinforce the goals of the project and provide prizes and incentives to participants.
+                   </p>
+                   <p>
+                   	Through this Project, the Kings of Kings anti-drug documentary and Soundtrack, we will “Flip the Script” and start a new trend that uses Hip-Hop to encourage our participants to graduate from school; improve their character obtain meaningful employment; pursue their Entrepreneurial goals; fulfill their civic duty and avoid the criminal justice system.
+                   </p>
+			        </div>	
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
