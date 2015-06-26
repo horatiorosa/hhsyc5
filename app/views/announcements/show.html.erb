@@ -1,0 +1,82 @@
+<p id="notice"><%= notice %></p>
+
+ <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">HHSYC - Administrators View
+                    <!-- <small>founded in 2001</small> -->
+                </h1>
+                <ol class="breadcrumb">
+                    <li><%=link_to 'Admin Home Page', adminfisher_path %>
+                    </li>  
+                    <li> 
+                    <%= link_to "New Event or Announcement", new_announcement_path, class: "active" %>
+                    </li>
+                     <li> 
+                    <%= link_to "View Announcements", announcements_path, class: "active" %>
+                    </li>
+                    <li>  
+                    <%= link_to "New Blog Post", announcements_path, class: "active" %>
+                    </li> 
+                    <li> 
+                    <%= link_to "New Photo for Gallery", announcements_path, class: "active" %>
+                    </li>
+                     <ul>
+                          <li class="go-right">
+                              
+                              <%= link_to "Logout", destroy_admin_session_path, class: "active", method: :delete %>
+                              
+                          </li>
+                     </ul>
+                    
+                  
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Sidebar Column -->
+                <%= render 'shared/sidebar_column' %>
+            <!-- Content Column -->
+            <div class="col-md-9">
+              <div class="stylestatic">
+                <div class="post_wrapper">
+                                        <div class="stylestatic">
+                                       
+                                            
+                                        <div >
+                                            <%= image_tag @announcement.image_url(:medium).to_s %>
+                                            
+                                        </div>
+										<h3 >
+											<%= @announcement.ann_title %>
+										</h3>
+										<p >
+											Submitted <%= time_ago_in_words(@announcement.created_at) %> ago.
+											|&nbsp;	<%= link_to 'Back', announcements_path %>&nbsp;
+											<% if admin_signed_in? %>
+											|&nbsp; <%= link_to 'Edit', edit_announcement_path(@announcement) %>&nbsp;
+											|&nbsp;	<%= link_to 'Delete', announcement_path(@announcement), method: :delete, data: { confirm: 'Are you sure?'} %>
+											<% end %>
+										</p>
+
+
+										<p >
+											<%= @announcement.ann_body %>
+										</p>
+                                        <!-- <p class="body">
+                                            <%= @announcement.image %>
+                                        </p> -->
+             
+              
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+

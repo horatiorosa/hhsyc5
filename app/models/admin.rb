@@ -3,4 +3,14 @@ class Admin < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :lockable
+
+  has_many :announcements
+	validates_presence_of :username, :password
+	validates :password, confirmation: true
+	validates_uniqueness_of :username, case_senstive: false
+	enum status: [:admin, :junior_admin, :blogger]
+	before_validation :default_role
+	def default_role
+		self.status ||= 2
+	end
 end

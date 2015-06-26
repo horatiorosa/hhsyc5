@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version: ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]
 
-Re-design of the HHSYC.ORG website on a Ruby on Rails frame, using Bootstrap, Devise and Bourbon.
+Re-design of the HHSYC.ORG website on a Ruby on Rails framework, using Bootstrap, Devise and Bourbon.
 
 
 

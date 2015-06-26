@@ -61,13 +61,18 @@
 
     <div class="container marketing">
 
+      <h1 class='welcomeh1'>LATEST ANNOUNCEMENTS</h1>
+
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
           <img class="img-circle" src="http://thesource.com/wp-content/uploads/2015/03/EBBCP-LOGO.png" alt="Generic placeholder image" width="140" height="140">
-          <h2 class="h2mark">End Black on Black Crime Project</h2>
-		        <p class="h2para">The creation of the “End Black on Black Crime Project” includes the “E Team”, among whose membership includes the top 100 black entertainers & executives in the country.</p>
-		        <%= link_to "View Details", ebobc_path, :class => "btn btn-default" %>
+          
+          <% @announcements.each do |announcement| %>
+          <h2 class="h2mark"><%= announcement.ann_title %> </h2>
+		        <p class="h2para"><%= announcement.ann_body %></p>
+		        <%= link_to "View Details", "#", :class => "btn btn-default" %>
+          <% end %>
 
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
