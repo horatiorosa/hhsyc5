@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
+
   devise_for :admins
+  resources :announcements
+
       
   
-  get 'admins_fisher', to: 'admins#index'
+  get 'adminfisher', to: 'admins#index'
 
   get 'aboutus', to: 'static_pages#aboutus'
   get 'mission', to: 'static_pages#mission'
