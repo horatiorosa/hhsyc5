@@ -14,7 +14,7 @@
                     <ul>
                           <li class="go-right">
                               <%= link_to "Logout", destroy_admin_session_path, class: "active", method: :delete %>
-                           </li>
+                             </li>
                      </ul>
                     </ol>
             </div>
@@ -30,21 +30,21 @@
                 <div class="stylestatic">
                     <div class="post_wrapper">
                         <div >
-                           <%= image_tag @announcement.image_url(:medium).to_s %>    
+                           <%= image_tag @blog.image_url(:medium).to_s %>    
                         </div>
                         <h3 >
-                            <%= @announcement.ann_title %>
+                            <%= @blog.blog_title %>
                         </h3>
                             <p >
-                            Submitted <%= time_ago_in_words(@announcement.created_at) %> ago.
-                            | &nbsp; <%= link_to 'Back', announcements_path %>&nbsp;
+                            Submitted <%= time_ago_in_words(@blog.created_at) %> ago.
+                            | &nbsp; <%= link_to 'Back', blogs_path %>&nbsp;
                             <% if admin_signed_in? %>
-                        |   &nbsp; <%= link_to 'Edit', edit_announcement_path(@announcement) %>&nbsp;
-                        |    &nbsp; <%= link_to 'Delete', announcement_path(@announcement),method: :delete, data: { confirm: 'Are you sure?'} %>
+                        |   &nbsp; <%= link_to 'Edit', edit_blog_path(@blog) %>&nbsp;
+                        |    &nbsp; <%= link_to 'Delete', blog_path(@blog),method: :delete, data: { confirm: 'Are you sure?'} %>
                             <% end %>
                             </p>
                             <p >
-                                <%= simple_format(@announcement.ann_body) %>
+                                <%= simple_format(@blog.blog_body) %>
                             </p>
                     </div>
                 </div>
@@ -54,3 +54,4 @@
 
         <hr>
     </div>
+

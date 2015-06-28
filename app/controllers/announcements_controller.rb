@@ -1,17 +1,22 @@
 class AnnouncementsController < ApplicationController
-  before_action :authenticate_admin!
-  before_action :set_announcement, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin!, except: [:index, :show]
+  before_action :set_announcement, only: [:show, :edit, :update, :destroy, :publicshow]
 
   # GET /announcements
   # GET /announcements.json
   def index
-    @announcements = Announcement.all
+    @announcements = Announcement.all.order('created_at DESC')
   end
 
   # GET /announcements/1
   # GET /announcements/1.json
   def show
-   @announcements = Announcement.all 
+   @announcements = Announcement.all
+
+  end
+
+  def publicshow
+    @announcements = Announcement.all
   end
 
   # GET /announcements/new
@@ -70,6 +75,8 @@ class AnnouncementsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
