@@ -11,24 +11,10 @@
                 <ol class="breadcrumb">
                     <li><%=link_to 'Admin Home Page', welcome_path %>
                     </li>  
-                    <li> 
-                    <%= link_to "New Event or Announcement", new_announcement_path, class: "active" %>
-                    </li>
-                     <li> 
-                    <%= link_to "View Announcements", announcements_path, class: "active" %>
-                    </li>
-                    <li>  
-                    <%= link_to "New Blog Post", announcements_path, class: "active" %>
-                    </li> 
-                    <li> 
-                    <%= link_to "New Photo for Gallery", announcements_path, class: "active" %>
-                    </li>
                      <ul>
-                     			<li class="go-right">
-                     					
-                    					<%= link_to "Logout", destroy_admin_session_path, class: "active", method: :delete %>
-                    					
-                     			</li>
+             			<li class="go-right">
+             			    <%= link_to "Logout", destroy_admin_session_path, class: "active", method: :delete %>
+            			</li>
                      </ul>
                     
                   
@@ -40,7 +26,7 @@
         <!-- Content Row -->
         <div class="row">
             <!-- Sidebar Column -->
-                <%= render 'shared/sidebar_column' %>
+                <%= render 'shared/sidebar_admin' %>
             <!-- Content Column -->
             <div class="col-md-9">
             	<div class="stylestatic">

@@ -38,23 +38,24 @@
                   </thead>
 
                     <tbody>
-                      <% @announcements.each do |announcement| %>
+                      <% @blogs.each do |blog| %>
                         <tr>
-                          <td><%= link_to announcement.ann_title, announcement %></td>
-                          <td><%= announcement.created_at.strftime("%b %d, %Y - %I:%M %p") %></td>
-                          <td><%= link_to 'View', announcement %></td>
+                          <td><%= link_to blog.blog_title, blog %></td>
+                          <td><%= blog.created_at.strftime("%b %d, %Y - %I:%M %p") %></td>
+                          <td><%= link_to 'View', blog %></td>
                           <% if admin_signed_in? %>
-                          <td><%= link_to 'Edit', edit_announcement_path(announcement) %></td>
-                          <td><%= link_to 'Delete', announcement, method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
+                          <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+                          <td><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
                         </tr>
                       <% end %>
                     </tbody>
                 </table>
-                <%= link_to 'New Event Post', new_announcement_path %>
+                <%= link_to 'New Blog Post', new_blog_path %>
               </div>  
             </div>
         </div>
         <!-- /.row -->
 
         <hr>
+
 

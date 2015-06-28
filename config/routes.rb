@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :blogs
   devise_for :admins
   resources :announcements
 
@@ -23,6 +24,8 @@ Rails.application.routes.draw do
   get 'ebobc', to: 'static_pages#ebobc'
   get 'juneteenth', to: 'static_pages#juneteenth'
   get 'eteam', to: 'static_pages#eteam'
+
+  get 'show/:id', to: 'announcements#publicshow', as: '/show'
   
   
   get 'welcome', to: 'welcome#index'

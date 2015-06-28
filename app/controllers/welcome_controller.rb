@@ -1,12 +1,12 @@
 class WelcomeController < ApplicationController
 
   def index
-  	
-    @announcements = Announcement.all
+  	@blogs = Blog.last(3)
+    @announcements = Announcement.last(3)
   end
 
   def show
-  	
+  	@blogs = Blog.all
    @announcements = Announcement.all 
   end
 
