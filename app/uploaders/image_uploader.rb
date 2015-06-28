@@ -40,7 +40,7 @@ class ImageUploader < CarrierWave::Uploader::Base
     process :resize_to_limit => [500, 500]
   end
 
-  def default_url
+  def default_url(*args) 
     "/assets/images/default_images/" + [version_name, "default.png"].compact.join('_')
   end
 

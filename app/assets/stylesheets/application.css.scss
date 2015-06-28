@@ -41,6 +41,7 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
+  background-color: rgba(41, 128, 185, 0.5) !important;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -82,6 +83,12 @@ img.navbar-brand {
   max-width: 50px;
   
 }
+
+.colorme {
+  background-color: rgba(41, 128, 185, 0.5) !important
+
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL

@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
-
-  resources :blogs
   devise_for :admins
+  resources :blogs
   resources :announcements
 
       
@@ -25,7 +24,10 @@ Rails.application.routes.draw do
   get 'juneteenth', to: 'static_pages#juneteenth'
   get 'eteam', to: 'static_pages#eteam'
 
-  get 'show/:id', to: 'announcements#publicshow', as: '/show'
+  get 'show/:id', to: 'announcements#publicshow', as: 'announcements/show'
+  get 'index/announcements', to: 'announcements#publicannindex', as: 'index/announcements'
+  # get 'index/announcements/:id', to: 'announcements#publicannindex'
+  get 'blog/show/:id', to: 'blogs#blogpubshow', as: 'blogs/show'
   
   
   get 'welcome', to: 'welcome#index'
