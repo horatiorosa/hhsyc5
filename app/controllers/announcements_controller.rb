@@ -1,6 +1,6 @@
 class AnnouncementsController < ApplicationController
   before_action :authenticate_admin!, except: [:index, :show]
-  before_action :set_announcement, only: [:show, :edit, :update, :destroy, :publicshow]
+  before_action :set_announcement, only: [:show, :edit, :update, :destroy, :publicshow, :publicannindex]
 
   # GET /announcements
   # GET /announcements.json
@@ -17,6 +17,10 @@ class AnnouncementsController < ApplicationController
 
   def publicshow
     @announcements = Announcement.all
+  end
+
+  def publicannindex
+    @announcements = Announcement.all.order('created_at DESC')
   end
 
   # GET /announcements/new

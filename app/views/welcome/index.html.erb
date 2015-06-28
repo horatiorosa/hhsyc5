@@ -72,7 +72,7 @@
           
           <h2 class="h2mark"><%= @announcements[0].ann_title %></h2>
 		        <p class="h2para"><%= truncate(@announcements[0].ann_body, length: 300, omission: "... (continued)") %></p>
-		        <%= link_to "View Details", show_path(@announcements[0]), :class => "btn btn-default" %>
+		        <%= link_to "View Details", announcements_show_path(@announcements[0]), :class => "btn btn-default" %>
 
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
@@ -80,13 +80,13 @@
           <!-- truncate("Once upon a time in a world far far away", length: 17) -->
           <h2 class="h2mark"><%= @announcements[1].ann_title %> </h2>
             <p class="h2para"><%= truncate(@announcements[1].ann_body, length: 300, omission: "... (continued)") %></p>
-            <%= link_to "View Details", show_path(@announcements[1]), :class => "btn btn-default" %>
+            <%= link_to "View Details", announcements_show_path(@announcements[1]), :class => "btn btn-default" %>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="http://thesource.com/wp-content/uploads/2014/06/HHAGGV001.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2 class="h2mark"><%= @announcements[2].ann_title %> </h2>
+          <h2 class="h2mark"><%= @announcements[2].ann_title %></h2>
             <p class="h2para"><%= truncate(@announcements[2].ann_body, length: 300, omission: "... (continued)") %></p>
-            <%= link_to "View Details", show_path(@announcements[2]), :class => "btn btn-default" %>
+            <%= link_to "View Details", announcements_show_path(@announcements[2]), :class => "btn btn-default" %>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -97,11 +97,11 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead"><%= truncate(@blog[1].blog_body, length: 300, omission: "... (continued)") %></p>
+          <h2 class="featurette-heading"><%= @blogs[2].blog_title %><span class="text-muted"> Dog unlawfully detained!</span></h2>
+          <p class="lead"><%= truncate(@blogs[2].blog_body, length: 300) %><%= link_to "(continued)", blogs_show_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <%= image_tag(@blogs[2].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
         </div>
       </div>
 
@@ -109,11 +109,11 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading"><%= @blogs[1].blog_title %><span class="text-muted"> Dog cuddles toy.</span></h2>
+          <p class="lead"><%= truncate(@blogs[1].blog_body, length: 300) %><%= link_to "(continued)", blogs_show_path(@blogs[1]) %></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <%= image_tag(@blogs[1].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
         </div>
       </div>
 
@@ -121,11 +121,11 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading"><%= @blogs[0].blog_title %><span class="text-muted"> He wants his money $$$.</span></h2>
+          <p class="lead"><%= truncate(@blogs[0].blog_body, length: 300) %><%= link_to "(continued)", blogs_show_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <%= image_tag(@blogs[0].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
         </div>
       </div>
 

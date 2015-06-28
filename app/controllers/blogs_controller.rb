@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
   before_action :authenticate_admin!, except: [:index, :show]
-  before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :set_blog, only: [:show, :edit, :update, :destroy, :blogpubshow]
 
   # GET /blogs
   # GET /blogs.json
@@ -11,6 +11,10 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @blogs = Blog.all
+  end
+
+  def blogpubshow
     @blogs = Blog.all
   end
 
@@ -58,7 +62,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Blog was successfully destroyed.' }
+      format.html { redirect_to blogs_url, notice: 'Blog was successfully deleted.' }
       format.json { head :no_content }
     end
   end
