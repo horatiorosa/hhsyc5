@@ -18,6 +18,10 @@ class BlogsController < ApplicationController
     @blogs = Blog.all
   end
 
+  def publicblogindex
+    @blogs = Blog.all
+  end
+
   # GET /blogs/new
   def new
     @blog = Blog.new

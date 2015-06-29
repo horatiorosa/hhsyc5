@@ -24,10 +24,11 @@ Rails.application.routes.draw do
   get 'juneteenth', to: 'static_pages#juneteenth'
   get 'eteam', to: 'static_pages#eteam'
 
-  get 'show/:id', to: 'announcements#publicshow', as: 'announcements/show'
-  get 'index/announcements', to: 'announcements#publicannindex', as: 'index/announcements'
+  get 'announcement/show/:id', to: 'announcements#publicshow', as: 'announcements/show'
+  get 'publicannindex', to: 'announcements#publicannindex', as: 'announcementlist'
   # get 'index/announcements/:id', to: 'announcements#publicannindex'
   get 'blog/show/:id', to: 'blogs#blogpubshow', as: 'blogs/show'
+  get 'publicblogindex', to: 'blogs#publicblogindex', as: 'bloglist'
   
   
   get 'welcome', to: 'welcome#index'
