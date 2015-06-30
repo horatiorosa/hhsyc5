@@ -1,31 +1,24 @@
-<p id="notice"><%= notice %></p>
+
 
  <!-- Page Content -->
     <div class="container">
-
+      <p id="notice"><%= notice %></p>
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">HHSYC - Administrators View
-                    <!-- <small>founded in 2001</small> -->
-                </h1>
-                <ol class="breadcrumb">
-                    <li><%=link_to 'Admin Home Page', adminfisher_path %>
-                    </li>  
-                    <ul>
-                          <li class="go-right">
-                              <%= link_to "Logout", destroy_admin_session_path, class: "active", method: :delete %>
-                           </li>
-                     </ul>
-                   </ol>
-            </div>
-        </div>
+        <% if admin_signed_in? %>
+        <%= render 'shared/admin_whitebar' %>
+        <% else %>
+        <%= render 'shared/public_whitebar' %>
+        <% end %>
         <!-- /.row -->
 
         <!-- Content Row -->
         <div class="row">
             <!-- Sidebar Column -->
+              <% if admin_signed_in? %>
                 <%= render 'shared/sidebar_admin' %>
+                <% else %>
+                <%= render 'shared/sidebar_public' %>
+              <% end %>
             <!-- Content Column -->
             <div class="col-md-9">
               <div class="stylestatic">
@@ -50,11 +43,14 @@
                       <% end %>
                     </tbody>
                 </table>
+                <% if admin_signed_in? %>
                 <%= link_to 'New Event Post', new_announcement_path %>
+                <% end %>
               </div>  
             </div>
         </div>
         <!-- /.row -->
 
         <hr class="featurette-divider">
+
 
