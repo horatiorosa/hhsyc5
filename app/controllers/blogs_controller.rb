@@ -19,7 +19,7 @@ class BlogsController < ApplicationController
   end
 
   def publicblogindex
-    @blogs = Blog.all
+    @blogs = Blog.all.order('created_at DESC')
   end
 
   # GET /blogs/new

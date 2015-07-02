@@ -29,10 +29,13 @@
                         </h3>
                             <p >
                             Submitted <%= time_ago_in_words(@announcement.created_at) %> ago.
-                            | &nbsp; <%= link_to 'Back', announcements_path %>&nbsp;
                             <% if admin_signed_in? %>
+                            | &nbsp; <%= link_to 'Back', announcements_path %>&nbsp;
+                            
                         |   &nbsp; <%= link_to 'Edit', edit_announcement_path(@announcement) %>&nbsp;
                         |    &nbsp; <%= link_to 'Delete', announcement_path(@announcement),method: :delete, data: { confirm: 'Are you sure?'} %>
+                        <% else %>
+                        | &nbsp; <%= link_to 'Back', :back %>&nbsp;
                             <% end %>
                             </p>
                             <p >

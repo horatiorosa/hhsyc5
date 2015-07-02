@@ -68,22 +68,22 @@
       <div class="row">
 
         <div class="col-lg-4">
-          <img class="img-circle" src="http://thesource.com/wp-content/uploads/2015/03/EBBCP-LOGO.png" alt="Generic placeholder image" width="140" height="140">
+          <%= image_tag(@announcements[0].image, class: "img-circle", width: "250", height: "200") %>
           
           <h2 class="h2mark"><%= @announcements[0].ann_title %></h2>
 		        <p class="h2para"><%= truncate(@announcements[0].ann_body, length: 300, omission: "... (continued)") %></p>
 		        <%= link_to "View Details", announcement_path(@announcements[0]), :class => "btn btn-default" %>
 
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="http://thesource.com/wp-content/uploads/2014/06/Revised-HHSYC-logo-2014.jpg" alt="Generic placeholder image" width="140" height="140">
+        <div class="col-lg-4">  
+          <%= image_tag(@announcements[1].image, class: "img-circle", width: "250", height: "200") %>
           <!-- truncate("Once upon a time in a world far far away", length: 17) -->
-          <h2 class="h2mark"><%= @announcements[1].ann_title %> </h2>
+          <h2 class="h2mark"><%= @announcements[1].ann_title %></h2>
             <p class="h2para"><%= truncate(@announcements[1].ann_body, length: 300, omission: "... (continued)") %></p>
             <%= link_to "View Details", announcement_path(@announcements[1]), :class => "btn btn-default" %>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="http://thesource.com/wp-content/uploads/2014/06/HHAGGV001.jpg" alt="Generic placeholder image" width="140" height="140">
+          <%= image_tag(@announcements[2].image, class: "img-circle", width: "250", height: "200") %>
           <h2 class="h2mark"><%= @announcements[2].ann_title %></h2>
             <p class="h2para"><%= truncate(@announcements[2].ann_body, length: 300, omission: "... (continued)") %></p>
             <%= link_to "View Details", announcement_path(@announcements[2]), :class => "btn btn-default" %>
@@ -97,8 +97,8 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading"><%= @blogs[2].blog_title %><span class="text-muted"> Dog unlawfully detained!</span></h2>
-          <p class="lead"><%= truncate(@blogs[2].blog_body, length: 300) %><%= link_to "(continued)", blogs_show_path(@blogs[2]) %></p>
+          <h2 class="featurette-heading"><%= @blogs[2].blog_title %><span class="text-muted"> Oprah!</span></h2>
+          <p class="lead"><%= truncate(@blogs[2].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
           <%= image_tag(@blogs[2].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
@@ -110,7 +110,7 @@
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading"><%= @blogs[1].blog_title %><span class="text-muted"> Dog cuddles toy.</span></h2>
-          <p class="lead"><%= truncate(@blogs[1].blog_body, length: 300) %><%= link_to "(continued)", blogs_show_path(@blogs[1]) %></p>
+          <p class="lead"><%= truncate(@blogs[1].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[1]) %></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
           <%= image_tag(@blogs[1].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
@@ -122,7 +122,7 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading"><%= @blogs[0].blog_title %><span class="text-muted"> He wants his money $$$.</span></h2>
-          <p class="lead"><%= truncate(@blogs[0].blog_body, length: 300) %><%= link_to "(continued)", blogs_show_path(@blogs[2]) %></p>
+          <p class="lead"><%= truncate(@blogs[0].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
           <%= image_tag(@blogs[0].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
