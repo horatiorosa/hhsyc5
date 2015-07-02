@@ -21,6 +21,7 @@ class AnnouncementsController < ApplicationController
 
   def publicannindex
     @announcements = Announcement.all.order('created_at DESC')
+
   end
 
   # GET /announcements/new
