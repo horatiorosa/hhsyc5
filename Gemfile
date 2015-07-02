@@ -39,7 +39,8 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'paperclip'
 gem 'will_paginate', '~> 3.0.7'
-gem 'bootstrap-will_paginate', :git => 'git://github.com/yrgoldteeth/bootstrap-will_paginate.git'
+gem 'will_paginate-bootstrap'
+gem 'spree', '~> 3.0.1'
 
 
 
