@@ -3,16 +3,7 @@
         <p id="notice"><%= notice %></p>
 
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <!-- <h1 class="page-header">HHSYC - Administrators View -->
-                    <!-- <small>founded in 2001</small> -->
-                <!-- </h1> -->
-                <ol class="breadcrumb">
-                    <li><%=link_to 'Back', :back %>
-                </ol>
-            </div>
-        </div>
+        
         <!-- /.row -->
 
         <!-- Content Row -->
@@ -24,6 +15,16 @@
                         <strong>Blog</strong>
                     </h2>
                     <hr>
+                    <div class="row">
+            <div class="col-lg-12">
+                <!-- <h1 class="page-header">HHSYC - Administrators View -->
+                    <!-- <small>founded in 2001</small> -->
+                <!-- </h1> -->
+                <ol class="breadcrumb">
+                    <li><%=link_to 'Back', :back %>
+                </ol>
+            </div>
+        </div>
                 </div>
                 <% @blogs.each do |blog| %>
                 <div class="col-lg-12 text-center">
@@ -34,7 +35,7 @@
                         <small><%= blog.created_at.strftime("%b %d, %Y - %I:%M %p") %></small>
                     </h2>
                     <p class="h2para"><%= truncate(blog.blog_body, length: 300, omission: "... (continued)") %></p>
-                    <%= link_to "View Details", blogs_show_path(blog), :class => "btn btn-default" %><% end %>
+                    <%= link_to "View Details", blog_path(blog), :class => "btn btn-default" %><% end %>
                     <hr>
                 </div>
                 

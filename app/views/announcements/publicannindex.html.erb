@@ -3,7 +3,21 @@
         <p id="notice"><%= notice %></p>
 
         <!-- Page Heading/Breadcrumbs -->
+        
+        <!-- /.row -->
+
+        <!-- Content Row -->
         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+
+                    <h2 class="intro-text text-center">HHSYC
+                        <strong>Announcement and Events</strong>
+                    </h2>
+
+                    <hr>
+                    <div class="row">
             <div class="col-lg-12">
                 <!-- <h1 class="page-header">HHSYC - Administrators View -->
                     <!-- <small>founded in 2001</small> -->
@@ -13,17 +27,6 @@
                 </ol>
             </div>
         </div>
-        <!-- /.row -->
-
-        <!-- Content Row -->
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">HHSYC
-                        <strong>Announcement and Events</strong>
-                    </h2>
-                    <hr>
                 </div>
                 <% @announcements.each do |announcement| %>
                 <div class="col-lg-12 text-center">
@@ -34,7 +37,7 @@
                         <small><%= announcement.created_at.strftime("%b %d, %Y - %I:%M %p") %></small>
                     </h2>
                     <p class="h2para"><%= truncate(announcement.ann_body, length: 300, omission: "... (continued)") %></p>
-                    <%= link_to "View Details", announcements_show_path(announcement), :class => "btn btn-default" %><% end %>
+                    <%= link_to "View Details", announcement_path(announcement), :class => "btn btn-default" %><% end %>
                     <hr>
                 </div>
                 
