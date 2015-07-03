@@ -18,6 +18,8 @@
  @import "bourbon";
  @import "base/base";
 
+ $p-font-color: #FFF;
+ $bg-wht-color: #f0f0ef;
 
 /* GLOBAL STYLES
 --------------------------------------------------
@@ -58,7 +60,8 @@ body {
 }
 .navbar-wrapper .navbar .container {
   width: auto;
-  background-color: rgba(41, 128, 185, 0.5) !important;
+  background: linear-gradient(-135deg, rgba(64, 64, 75, 0.8), rgba(29, 29, 34, 0.8)) !important;
+
 }
 
 // .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
@@ -73,8 +76,8 @@ body {
 //   background-color: rgba(0, 66, 139, 0.8) !important;
 // }
 
-.btn-danger	{
-	margin-top: .5em;
+.btn-danger {
+  margin-top: .5em;
 }
 
 img.navbar-brand {
@@ -96,7 +99,7 @@ img.navbar-brand {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  height: 700px;
   margin-bottom: 60px;
   background-size: cover;
 }
@@ -107,7 +110,7 @@ img.navbar-brand {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 700px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -141,13 +144,19 @@ img.navbar-brand {
 .welcomeh1  {
   margin-top: -30px;
   padding-bottom: 15px;
-  
-
+  color: #2e2e2b;
+  text-shadow: 5px 5px 5px #a5a59f;
 }
+
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
 }
+
+.farLeft, .farRight, .middle {
+  background-color: $bg-wht-color;
+}
+
 .marketing h2 {
   font-weight: normal;
 }
@@ -164,11 +173,16 @@ img.navbar-brand {
   font-size: 23px;
 }
 
+.img-circle {
+  box-shadow: 5px 5px 5px #42423e;
+}
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 1px 0 rgba(247,247,246,1);
 }
 
 /* Thin out the marketing headings */
@@ -176,6 +190,7 @@ img.navbar-brand {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  text-shadow: 2px 2px 2px #54544b;
 }
 
 
@@ -309,3 +324,11 @@ img.navbar-brand {
     }
   }
 
+  // ****************************Paginate links************************
+
+
+.paginate-block {
+  display: block;
+  margin-left: 35%;
+  margin-right: auto;
+}
