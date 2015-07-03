@@ -43,9 +43,9 @@
                 
                 <div class="col-lg-12 text-center">
                     <ul class="pager">
-                        <li class="previous"><a href="#">&larr; Older</a>
+                        <li class="previous"><a href="#">&larr; Newer</a>
                         </li>
-                        <li class="next"><a href="#">Newer &rarr;</a>
+                        <li class="next"><a href="#">Older &rarr;</a>
                         </li>
                     </ul>
                 </div>
@@ -54,4 +54,26 @@
         <!-- /.row -->
 
         <hr class="featurette-divider">
-   
+    <div class="paginate-block">
+    <%= will_paginate @announcements, renderer: BootstrapPagination::Rails, next_label: "Older", previous_label: "Newer", inner_window: 1, outer_window: 0 %>
+    </div>
+
+    <nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
