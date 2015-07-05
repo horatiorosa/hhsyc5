@@ -57,7 +57,7 @@
 
     <nav>
       <ul class="paginate-block pagination-sm">
-        <li><%= will_paginate @announcements, renderer: BootstrapPagination::Rails, next_label: "Older", previous_label: "Newer", inner_window: 1, outer_window: 0 %>
+        <li><%= will_paginate @announcements, renderer: BootstrapPagination::Rails, next_label: "Older", previous_label: "Newer", page_links: false %>
         </li>
       </ul>
     </nav>
