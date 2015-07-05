@@ -42,7 +42,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   def default_url(*args)
    ActionController::Base.helpers.asset_path("default_images/" + [version_name, "default.png"].compact.join('_'))
- end
+  end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
