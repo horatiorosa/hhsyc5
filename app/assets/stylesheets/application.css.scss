@@ -145,7 +145,7 @@ img.navbar-brand {
   margin-top: -30px;
   padding-bottom: 15px;
   color: #2e2e2b;
-  text-shadow: 5px 5px 5px #a5a59f;
+  text-shadow: 2px 2px 2px $bg-wht-color;
 }
 
 .marketing .col-lg-4 {
@@ -332,4 +332,37 @@ img.navbar-brand {
   text-align: center; /* aligning the li element */
   border-radius: 10px;
   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//***************************** static_pages/About us ***************************//
+
+.page-header {
+  text-shadow: 2px 2px 2px $bg-wht-color;
+}
+
+//******************static_pages ebobc *************************//
+
+.stylestatic h3 {
+  @extend .page-header;
+  font-size: 27px;
+  text-decoration: underline;
+}
+
+.stylestatic p {
+  font-size: 15px;
+  line-height: 25px;
+  padding: 10px;
+  background-color: rgba($bg-wht-color, 0.5);
 }
