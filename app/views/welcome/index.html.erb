@@ -1,0 +1,140 @@
+ <!-- Carousel
+    ================================================== -->
+       <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="https://scontent-lga1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1538890_10152138735653214_8895824505186887916_n.jpg?oh=faff647e8936f5ed9bed9cca2d0842c4&oe=562F8264" alt="First slide">
+                                <!-- <div class="container">
+                                    <div class="carousel-caption">
+                                      <h1>Proclamation Signed!</h1>
+                                      <p>Charles and Randy Fisher meeting with Mayor Bloomberg and NYC Police Commissioner Ray Kelly</p></div>
+                                  `</div>
+        `                       </div> -->
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="https://scontent-lga1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/10425881_10152692602223214_4240890184103912910_n.jpg?oh=7364102c0136f77f13926f99a60f003d&oe=5634E65A" alt="Second slide">
+                                <!-- <div class="container"> -->
+                                    <!-- <div class="carousel-caption">
+                                      <h1>Another example headline.</h1>
+                                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                                    </div>
+                                  </div>
+                                </div> -->
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="https://scontent-lga1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/7106_10152509436108214_5447367104908546089_n.jpg?oh=dcf955e2c2d9f9a8961315c1cce495e6&oe=5631508F" alt="Third slide">
+                                <!-- <div class="container">
+                                    <div class="carousel-caption">
+                                      <h1>One more for good measure.</h1>
+                                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <h1 class='welcomeh1'>LATEST EVENTS</h1>
+
+      <!-- Three columns of text below the carousel -->
+
+      <div class="row">
+
+        <div class="col-lg-4">
+          <%= image_tag(@announcements[2].image, class: "img-circle", width: "250", height: "200") %>
+          
+          <h2 class="h2mark"><%= @announcements[2].ann_title %></h2>
+		        <p class="h2para"><%= truncate(@announcements[2].ann_body, length: 300, omission: "... (continued)") %></p>
+		        <%= link_to "View Details", announcement_path(@announcements[2]), :class => "btn btn-default" %>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">  
+          <%= image_tag(@announcements[1].image, class: "img-circle", width: "250", height: "200") %>
+          <!-- truncate("Once upon a time in a world far far away", length: 17) -->
+          <h2 class="h2mark"><%= @announcements[1].ann_title %></h2>
+            <p class="h2para"><%= truncate(@announcements[1].ann_body, length: 300, omission: "... (continued)") %></p>
+            <%= link_to "View Details", announcement_path(@announcements[1]), :class => "btn btn-default" %>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <%= image_tag(@announcements[0].image, class: "img-circle", width: "250", height: "200") %>
+          <h2 class="h2mark"><%= @announcements[0].ann_title %></h2>
+            <p class="h2para"><%= truncate(@announcements[0].ann_body, length: 300, omission: "... (continued)") %></p>
+            <%= link_to "View Details", announcement_path(@announcements[0]), :class => "btn btn-default" %>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><%= @blogs[2].blog_title %><span class="text-muted"> Oprah!</span></h2>
+          <p class="lead"><%= truncate(@blogs[2].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
+        </div>
+        <div class="col-md-5">
+          <%= image_tag(@blogs[2].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading"><%= @blogs[1].blog_title %><span class="text-muted"> Dog cuddles toy.</span></h2>
+          <p class="lead"><%= truncate(@blogs[1].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[1]) %></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <%= image_tag(@blogs[1].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><%= @blogs[0].blog_title %><span class="text-muted"> He wants his money $$$.</span></h2>
+          <p class="lead"><%= truncate(@blogs[0].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
+        </div>
+        <div class="col-md-5">
+          <%= image_tag(@blogs[0].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      
+
+    </div><!-- /.container -->
