@@ -19,7 +19,9 @@
  @import "base/base";
 
  $p-font-color: #FFF;
- $bg-wht-color: #f0f0ef;
+ $bg-wht-color: #e8e8e8;
+ $shadow-color: #444444;
+ $text-shadow-color: #c9c9c9;
 
 /* GLOBAL STYLES
 --------------------------------------------------
@@ -332,4 +334,31 @@ img.navbar-brand {
   text-align: center; /* aligning the li element */
   border-radius: 10px;
   
+}
+
+
+//*********************************** publicannindex & publicblogindex ***********************//
+
+.intro-text {
+  font-size: 30px;
+  text-shadow: 2px 2px 2px $text-shadow-color;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px $shadow-color;
+  background: -webkit-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* Standard syntax */
+}
+
+.breadcrumb {
+  box-shadow: 3px 3px 3px $shadow-color;
+
+}
+
+//********************* Universal styling *********************//
+
+.page-header {
+  text-shadow: 2px 2px 2px $bg-wht-color;
+
 }
