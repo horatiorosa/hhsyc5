@@ -348,14 +348,15 @@ img.navbar-brand {
 .stylestatic h3 {
   @extend .page-header;
   font-size: 27px;
-  text-decoration: underline;
+
 }
 
 .stylestatic p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 25px;
-  padding: 10px;
-  background-color: rgba($bg-wht-color, 0.5);
+  padding: 25px;
+  background-color: rgba(250,251,251, 0.9);
+  border-radius: 5px;
 }
 
 //*********************************** publicannindex & publicblogindex ***********************//
