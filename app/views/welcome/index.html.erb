@@ -1,5 +1,4 @@
-<!-- Carousel
-    ================================================== -->
+
        <div class="row">
             <div class="box">
                 <div class="col-lg-12 text-center">
@@ -71,8 +70,12 @@
           <%= image_tag(@announcements[2].image, class: "img-circle", width: "250", height: "200") %>
           
           <h2 class="h2mark"><%= @announcements[2].ann_title %></h2>
+
        <p class="h2para"><%= truncate(@announcements[2].ann_body, length: 300, omission: "... (continued)") %></p>
        <%= link_to "View Details", announcement_path(@announcements[2]), :class => "btn btn-default" %>
+
+		        <p class="h2para"><%= truncate(@announcements[2].ann_body, length: 300, omission: "... (continued)") %></p>
+		        <%= link_to "View Details", announcement_path(@announcements[2]), :class => "btn btn-default" %>
 
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">  
