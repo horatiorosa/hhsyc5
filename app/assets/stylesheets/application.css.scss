@@ -348,6 +348,7 @@ img.navbar-brand {
 .stylestatic h3 {
   @extend .page-header;
   font-size: 27px;
+  padding: 25px;
 
 }
 
@@ -357,6 +358,28 @@ img.navbar-brand {
   padding: 25px;
   background-color: rgba(250,251,251, 0.9);
   border-radius: 5px;
+}
+
+//***************************** static_pages/company_structure ***************************//
+.stylestatic {
+  background-color: rgba(250,251,251, 0.9);
+  border-radius: 5px;
+
+  h5 {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px $bg-wht-color;
+    text-decoration: underline;
+ }
+  ul {
+    padding: 10px;
+  }
+  li {
+    font-size: 17px;
+    padding: 5px;
+    text-align: center;
+  }
 }
 
 //*********************************** publicannindex & publicblogindex ***********************//
