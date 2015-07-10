@@ -17,6 +17,9 @@
 
  @import "bourbon";
  @import "base/base";
+ @import "bootstrap-sprockets";
+@import "bootstrap";
+
 
  $p-font-color: #FFF;
  $bg-wht-color: #f0f0ef;
@@ -332,4 +335,113 @@ img.navbar-brand {
   text-align: center; /* aligning the li element */
   border-radius: 10px;
   
+}
+
+// SPREE STYLE...................................//
+a{
+    font-family: courier new;
+    font-size: 16px;
+  }
+#logo {
+    margin-bottom: 10px;
+
+    img {
+      width: 200px;
+      height: 200px
+    }
+   
+  }
+ .form-group {
+
+  .form-control{
+    width: 400px;
+  }
+  .btn btn-primary{
+    width: 100px;
+  }
+  }
+
+ .list-group{
+  .list-group-item{
+    border: 0px;
+
+  }
+  .list-group-item:hover{
+    background: none;
+    color: #428bca;
+  }
+ }
+.col-md-12{
+  a{
+    font-family: courier new;
+    font-size: 16px;
+  }
+  a:hover :focus{
+    // background: white;
+  }
+}
+.panel-footer{
+  
+  border: none;
+}
+
+.slideout {
+    width: auto;
+    position: fixed;
+    top: 52px;
+    left: -270px;
+    height: 100%;
+    background: rgba(216, 212, 212, 0.9);
+    z-index: 100;
+}
+.slideout .menu-toggle {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    display: inline-block;
+    float:left;
+    padding: 6px 9px 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #999;
+    text-decoration: none;
+    vertical-align: top;
+}
+  .slideout .menu-toggle:hover {
+    color: #fff;
+}
+.slideout ul {
+    margin-top: 52px;
+    list-style: none;
+    font-weight: 300;
+}
+.slideout ul li a {
+    position: relative;
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+.slideout ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+.slideout ul li a i {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    
+}
+.header {
+    padding: 11px;
+
+}
+.header .menu-toggle {
+    line-height: 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.header .menu-toggle:hover {
+    color: #fff;
 }
