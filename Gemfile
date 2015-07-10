@@ -37,10 +37,15 @@ gem 'devise'
 gem 'bourbon'
 gem 'carrierwave'
 gem 'rmagick'
-# gem 'paperclip'
+gem 'paperclip'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
-gem 'spree', '~> 3.0.1'
+gem 'spree', '3.0.1'
+gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+
+
+
 
 
 
