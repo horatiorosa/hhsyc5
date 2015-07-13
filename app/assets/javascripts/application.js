@@ -50,9 +50,9 @@ $(document).ready(function(){
 
 // We put everything in one div
 // and let CSS do the magic
-	var cssDiv = $('#3columns');
+	var cssDiv = $("#3columns");
 	for(var i=0; i<myArray.length; i++){
-	cssDiv.append('<p>' + myArray[i] + '</p>');
+	cssDiv.append('<li>' + myArray[i] + '</p>');
 }
 
 	$('[data-removable]').on("ajax:complete", function(e){

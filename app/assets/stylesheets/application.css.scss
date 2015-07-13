@@ -25,6 +25,10 @@
 --------------------------------------------------
  Padding below the footer and lighter body text */
 
+ html {
+  overflow-x: hidden !important;
+}
+
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
@@ -43,7 +47,7 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
-  background-color: rgba(41, 128, 185, 0.5) !important;
+  
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -54,17 +58,16 @@ body {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
-  background-color: rgba(41, 128, 185, 0.5) !important;
   border: 125, 97, 174;
   border: 2px solid;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
-  background: linear-gradient(-135deg, rgba(64, 64, 75, 0.8), rgba(29, 29, 34, 0.8)) !important;
+  background: linear-gradient(-135deg, rgba(64, 64, 75, 0.8)) !important;
 
 }
 
-// .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
 //   background-image: -webkit-linear-gradient(top,#080808 0,#0f0f0f 100%); 
 //   background-image: -o-linear-gradient(top,#080808 0,#0f0f0f 100%);
 //   background-image: -webkit-gradient(linear,left top,left bottom,from(#080808),to(#0f0f0f)); 
@@ -74,7 +77,8 @@ body {
 //   -webkit-box-shadow: inset 0 3px 9px rgba(0, 66, 139, 0.8);
 //   box-shadow: inset 0 3px 9px rgba(0, 66, 139, 0.8);
 //   background-color: rgba(0, 66, 139, 0.8) !important;
-// }
+    background-color: white !important;
+}
 
 .btn-danger {
   margin-top: .5em;
@@ -87,10 +91,10 @@ img.navbar-brand {
   
 }
 
-.colorme {
-  background-color: rgba(41, 128, 185, 0.5) !important
+// .colorme {
+//   background-color: rgba(41, 128, 185, 0.5) !important
 
-}
+// }
 
 
 
@@ -333,3 +337,17 @@ img.navbar-brand {
   border-radius: 10px;
   
 }
+/* eteam */
+
+#3columns {
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  text-align: center;
+}
+
+
+

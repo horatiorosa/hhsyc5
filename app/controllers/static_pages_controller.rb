@@ -20,7 +20,10 @@ class StaticPagesController < ApplicationController
   def hhsyc_divisions
   end
 
-  def map
+  def startchapter
+  end
+
+  def joinhhsyc
   end
 
   def ccd
