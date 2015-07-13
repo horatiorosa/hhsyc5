@@ -20,7 +20,7 @@ class AnnouncementsController < ApplicationController
   end
 
   def publicannindex
-    @announcements = Announcement.all.order('created_at DESC')
+    @announcements = Announcement.all.order('created_at DESC').paginate(page: params[:page], per_page: 2)
 
   end
 
