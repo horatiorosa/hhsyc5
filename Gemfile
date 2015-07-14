@@ -40,7 +40,7 @@ gem 'rmagick'
 # gem 'paperclip'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
-gem 'spree', '~> 3.0.1'
+# gem 'spree', '~> 3.0.1'
 
 
 
@@ -58,3 +58,8 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+<<<<<<< HEAD
+=======
+
+ruby '2.1.2'
+>>>>>>> fdf70436ee12ab7b0237fd3c8dbf1226a5731a16
