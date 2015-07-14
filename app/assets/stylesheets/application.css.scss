@@ -19,7 +19,9 @@
  @import "base/base";
 
  $p-font-color: #FFF;
- $bg-wht-color: #f0f0ef;
+ $bg-wht-color: #e8e8e8;
+ $shadow-color: #444444;
+ $text-shadow-color: #c9c9c9;
 
 /* GLOBAL STYLES
 --------------------------------------------------
@@ -28,6 +30,29 @@
  html {
   overflow-x: hidden !important;
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+  background-image: -webkit-linear-gradient(top,#fff 0, #fff 100%) !important;
+  box-shadow: none !important;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a {
+    color: rgb(41, 128, 185) !important;
+  }
+
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: red !important;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: red !important; 
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: rgb(41, 128, 185) !important;
+}
+
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
   background-image: -webkit-linear-gradient(top,#fff 0, #fff 100%) !important;
@@ -172,7 +197,7 @@ img.navbar-brand {
   margin-top: -30px;
   padding-bottom: 15px;
   color: #2e2e2b;
-  text-shadow: 5px 5px 5px #a5a59f;
+  text-shadow: 2px 2px 2px $bg-wht-color;
 }
 
 .marketing .col-lg-4 {
@@ -360,6 +385,7 @@ img.navbar-brand {
   border-radius: 10px;
   
 }
+<<<<<<< HEAD
 /* eteam */
 
 #3columns {
@@ -373,4 +399,78 @@ img.navbar-brand {
 }
 
 
+=======
+
+
+//***************************** static_pages/About us ***************************//
+
+.page-header {
+  text-shadow: 2px 2px 2px $bg-wht-color;
+}
+
+//******************static_pages ebobc *************************//
+
+.stylestatic h3 {
+  @extend .page-header;
+  font-size: 27px;
+  padding: 25px;
+
+}
+
+.stylestatic p {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 25px;
+  background-color: rgba(250,251,251, 0.9);
+  border-radius: 5px;
+}
+
+//***************************** static_pages/company_structure ***************************//
+.stylestatic {
+  background-color: rgba(250,251,251, 0.9);
+  border-radius: 5px;
+
+  h5 {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px $bg-wht-color;
+    text-decoration: underline;
+ }
+  ul {
+    padding: 10px;
+  }
+  li {
+    font-size: 17px;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+//*********************************** publicannindex & publicblogindex ***********************//
+
+.intro-text {
+  font-size: 30px;
+  text-shadow: 2px 2px 2px $text-shadow-color;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px $shadow-color;
+  background: -webkit-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* Standard syntax */
+}
+
+.breadcrumb {
+  box-shadow: 3px 3px 3px $shadow-color;
+
+}
+
+//********************* Universal styling *********************//
+
+.page-header {
+  text-shadow: 2px 2px 2px $bg-wht-color;
+
+}
+>>>>>>> fdf70436ee12ab7b0237fd3c8dbf1226a5731a16
 

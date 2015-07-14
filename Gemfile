@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-# ruby '2.2.2'
+ruby '2.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -41,10 +41,6 @@ gem 'rmagick'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
 
-
-
-
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -58,3 +54,4 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
