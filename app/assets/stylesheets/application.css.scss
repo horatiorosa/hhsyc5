@@ -22,6 +22,7 @@
  $bg-wht-color: #e8e8e8;
  $shadow-color: #444444;
  $text-shadow-color: #c9c9c9;
+ 
 
 
 // body:before {
@@ -42,8 +43,12 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
   background-color: rgba(52, 152, 219, 1.0) !important;
-  font-family: 'Raleway', sans-serif ;
+  font-family: Raleway !important, sans-serif;
 }
+
+// p {
+//   font-family: Raleway !important, sans-serif;
+// }
 
 
 
@@ -429,6 +434,10 @@ img.navbar-brand {
   text-align: center;
 }
 
+.stylestatic h4 {
+  text-align: center;
+}
+
 //***************************** static_pages/company_structure ***************************//
 .stylestatic {
   background-color: rgba(250,251,251, 0.9);
@@ -448,7 +457,7 @@ img.navbar-brand {
     font-size: 17px;
     padding: 5px;
     //text-align: center;
-    list-style: square;
+    // list-style: square;
   }
 }
 
@@ -476,7 +485,7 @@ img.navbar-brand {
 
 .blog_img ,.announcement_img {
   border-radius: 20px;
-  margin: 30px 30%;
+  margin: 30px 20%;
 }
 .img_background {
   background: rgba(0, 0, 0, 0.2);
@@ -535,4 +544,14 @@ form.new_announcement, form.new_blog {
 
 }
 
+body {
+  font-family: Raleway !important;
+}
 
+.bold {
+  font-weight: bold;
+}
+
+.centeritems li {
+  text-align: center !important;
+}
