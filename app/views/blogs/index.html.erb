@@ -21,22 +21,22 @@
             <div class="col-md-9">
               <div class="stylestatic">
                 <h3>Blogs Listing</h3>
-                <table>
-                  <thead>
+                <table id="blg_list">
+                  <!-- <thead>
                     <tr>
                       <th colspan="3"></th>
                     </tr>
-                  </thead>
+                  </thead> -->
 
                     <tbody>
                       <% @blogs.each do |blog| %>
-                        <tr>
-                          <td><%= link_to blog.blog_title, blog %></td>
-                          <td><%= blog.created_at.strftime("%b %d, %Y - %I:%M %p") %></td>
-                          <td><%= link_to 'View', blog %></td>
+                        <tr class="blg_tbl">
+                          <td class="blg_tbl_title"><%= link_to blog.blog_title, blog %></td>
+                          <td class="blg_tbl_date"><%= blog.created_at.strftime("%b %d, %Y - %I:%M %p") %></td>
+                          <td class="blg_tbl_view"><%= link_to 'View', blog %></td>
                           <% if admin_signed_in? %>
-                          <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-                          <td><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
+                          <td class="blg_tbl_edit"><%= link_to 'Edit', edit_blog_path(blog) %></td>
+                          <td class="blg_tbl_delete"><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
                         </tr>
                       <% end %>
                     </tbody>

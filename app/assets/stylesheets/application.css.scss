@@ -426,7 +426,7 @@ img.navbar-brand {
   text-shadow: 2px 2px 2px $bg-wht-color;
 }
 
-//******************static_pages ebobc *************************//
+//****************** static_pages ebobc *************************//
 
 .stylestatic h3 {
   @extend .page-header;
@@ -466,7 +466,8 @@ img.navbar-brand {
   li {
     font-size: 17px;
     padding: 5px;
-    text-align: center;
+    //text-align: center;
+    list-style: square;
   }
 }
 
@@ -489,6 +490,63 @@ img.navbar-brand {
 
 }
 
+
+//********************* annoumcnemtn/ show & blog/show  **************************//
+
+.blog_img ,.announcement_img {
+  border-radius: 20px;
+  margin: 30px 30%;
+}
+.img_background {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+//  .announcement_img{
+//   @extend .blog_img;
+//   margin-top: 40px
+// }
+//===================================== adminfisher =====================================//
+//******************** announcement/new (form) & post nwe blog (form)  *********************//
+form.new_announcement, form.new_blog {
+  width: 80%;
+  margin: auto;
+}
+
+#announcement_ann_title, #announcement_ann_body, #blog_blog_body, #blog_blog_title {
+  box-shadow: 2px 2px 2px $shadow-color;
+}
+
+//******************** announcment/index (all announcments) & blog/index (all blog posts) **********************//
+//table//
+#ann_list, #blg_list {
+  width: 80%; 
+  margin: auto;
+}
+//tr//
+.ann_tbl, .blg_tbl {
+  height: 30px;
+}
+//td//
+.ann_tbl_title, .blg_tbl_title {
+  width: 50%;
+  font-weight: bold;
+}
+.ann_tbl_date, .blg_tbl_date {
+  width: 25%;
+}
+.ann_tbl_view, .ann_tbl_delete, .ann_tbl_edit, .blg_tbl_view, .blg_tbl_delete, .blg_tbl_edit {
+  width: 8%;
+}
+
+//*********************** mission *******************************//
+.mission_ul {
+  width: 80%;
+  padding: 0;
+  margin: 20px 10%;
+}
+// .mission_list {
+//   text-align: left;
+// }
 //********************* Universal styling *********************//
 
 .page-header {
