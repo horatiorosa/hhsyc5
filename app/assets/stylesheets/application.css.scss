@@ -23,6 +23,12 @@
  $shadow-color: #444444;
  $text-shadow-color: #c9c9c9;
 
+
+// body:before {
+//   white-space: pre;
+//   font-family: monospace;
+//   content: "Error: File to import not found or unreadable: bourbon.\A        Load path: /Users/horatiorosa/Desktop/hhsyc5/app/assets/stylesheets\A         on line 18 of app/assets/stylesheets/application.css.scss\A \A 13:  \A 14:  *= require_self\A 15:  */\A 16: \A 17: \A 18:  @import \"bourbon\";\A 19:  @import \"base/base\";\A 20: \A 21:  $p-font-color: #FFF;\A 22:  $bg-wht-color: #f0f0ef;\A 23: "; }
+
 /* GLOBAL STYLES
 --------------------------------------------------
  Padding below the footer and lighter body text */
@@ -235,17 +241,9 @@ img.navbar-brand {
 
 }
 
-// .img-circle2 {
-//   background-color: white;
-//   height: 301px;
-//   width: 301px;
-//   border-radius: 100%;
-
-  
-// }
-
 .containermarketing {
   color: rgb(236, 240, 241) !important;
+  
 
 }
 
@@ -355,24 +353,15 @@ img.navbar-brand {
 
 // ********************************E-STARS************************
 
-/* And.. the CSS way */
+
 #3columns {
   -moz-column-count: 3;
   -moz-column-gap: 20px;
-  
   -webkit-column-count: 3;
   -webkit-column-gap: 20px;
-  
-  /* 
-  In the future, when browsers
-  get full support for this, we
-  won't need "browser prefixes"
-  (-webkit, -moz, -o, -ie), but
-  for now, it's safer to have
-  them.
-  */
   column-count: 3;
   column-gap: 20px;
+  text-align: center;
 }
 
 // ****************************Announcement Styles************************
@@ -409,15 +398,7 @@ img.navbar-brand {
 
 /* eteam */
 
-#3columns {
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px;
-  column-count: 3;
-  column-gap: 20px;
-  text-align: center;
-}
+
 
 
 //***************************** static_pages/About us ***************************//
