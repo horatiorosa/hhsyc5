@@ -21,8 +21,8 @@ s<!-- Page Content -->
             <div class="col-md-9">
                 <div class="stylestatic">
                     <div class="post_wrapper">
-                        <div >
-                           <%= image_tag @blog.image_url(:medium).to_s %>    
+                        <div>
+                           <%= image_tag(@blog.image_url(:medium).to_s, :class => "blog_img")  %>    
                         </div>
                         <h3 >
                             <%= @blog.blog_title %>
