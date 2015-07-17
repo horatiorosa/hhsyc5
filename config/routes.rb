@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get 'projects', to: 'static_pages#projects'
   get 'ebobc', to: 'static_pages#ebobc'
   get 'juneteenth', to: 'static_pages#juneteenth'
+  get 'mdg', to: 'static_pages#mdg'
   get 'eteam', to: 'static_pages#eteam'
 
   get 'announcement/show/:id', to: 'announcements#publicshow', as: 'announcements/show'

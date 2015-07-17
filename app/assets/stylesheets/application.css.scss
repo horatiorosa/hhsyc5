@@ -30,59 +30,15 @@
  html {
   overflow-x: hidden !important;
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
-  background-image: -webkit-linear-gradient(top,#fff 0, #fff 100%) !important;
-  box-shadow: none !important;
 
-}
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a {
-    color: rgb(41, 128, 185) !important;
-  }
-
-.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover {
-  color: red !important;
-}
-
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-  color: red !important; 
-  background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-  color: rgb(41, 128, 185) !important;
-}
-
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
-  background-image: -webkit-linear-gradient(top,#fff 0, #fff 100%) !important;
-  box-shadow: none !important;
-
-}
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a {
-    color: rgb(41, 128, 185) !important;
-  }
-
-.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover {
-  color: red !important;
-}
-
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-  color: red !important; 
-  background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-  color: rgb(41, 128, 185) !important;
-}
 
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  background-color: rgba(41, 128, 185, 0.4) !important;
+  background-color: rgba(52, 152, 219, 1.0) !important;
   font-family: 'Raleway', sans-serif ;
 }
+
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -139,6 +95,53 @@ img.navbar-brand {
   
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+  background-image: -webkit-linear-gradient(top,#fff 0, #fff 100%) !important;
+  box-shadow: none !important;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a {
+    color: rgb(41, 128, 185) !important;
+  }
+
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: red !important;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: red !important; 
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: rgb(41, 128, 185) !important;
+}
+
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+  background-image: -webkit-linear-gradient(top,#fff 0, #fff 100%) !important;
+  box-shadow: none !important;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a {
+    color: rgb(41, 128, 185) !important;
+  }
+
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: red !important;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: red !important; 
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: rgb(41, 128, 185) !important;
+}
+
 // .colorme {
 //   background-color: rgba(41, 128, 185, 0.5) !important
 
@@ -193,10 +196,11 @@ img.navbar-brand {
 
 /* Center align the text within the three columns below the carousel */
 
+
 .welcomeh1  {
   margin-top: -30px;
-  padding-bottom: 15px;
-  color: #2e2e2b;
+  padding-bottom: 30px;
+  color: white;
   text-shadow: 2px 2px 2px $bg-wht-color;
 }
 
@@ -227,7 +231,24 @@ img.navbar-brand {
 
 .img-circle {
   box-shadow: 5px 5px 5px #42423e;
+  margin-top: 2px;
+
 }
+
+// .img-circle2 {
+//   background-color: white;
+//   height: 301px;
+//   width: 301px;
+//   border-radius: 100%;
+
+  
+// }
+
+.containermarketing {
+  color: rgb(236, 240, 241) !important;
+
+}
+
 /* Featurettes
 ------------------------- */
 
@@ -385,7 +406,7 @@ img.navbar-brand {
   border-radius: 10px;
   
 }
-<<<<<<< HEAD
+
 /* eteam */
 
 #3columns {
@@ -397,9 +418,6 @@ img.navbar-brand {
   column-gap: 20px;
   text-align: center;
 }
-
-
-=======
 
 
 //***************************** static_pages/About us ***************************//
@@ -414,6 +432,7 @@ img.navbar-brand {
   @extend .page-header;
   font-size: 27px;
   padding: 25px;
+  text-align: center;
 
 }
 
@@ -423,6 +442,10 @@ img.navbar-brand {
   padding: 25px;
   background-color: rgba(250,251,251, 0.9);
   border-radius: 5px;
+}
+
+.stylestatic h2 {
+  text-align: center;
 }
 
 //***************************** static_pages/company_structure ***************************//
@@ -472,5 +495,5 @@ img.navbar-brand {
   text-shadow: 2px 2px 2px $bg-wht-color;
 
 }
->>>>>>> fdf70436ee12ab7b0237fd3c8dbf1226a5731a16
+
 

@@ -59,8 +59,8 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-
+    <div class="container marketing containermarketing">
+      
       <h1 class='welcomeh1'>LATEST EVENTS</h1>
 
       <!-- Three columns of text below the carousel -->
@@ -68,40 +68,45 @@
       <div class="row">
 
         <div class="col-lg-4">
-          IMG circle
+          <div class="img-circle2", height="100%">
+          <%= image_tag(@announcements[2].image, class: "img-circle", width: "300", height: "300") %>
+          </div>
           
-          <h2 class="h2mark">ann.title</h2>
-		        <p class="h2para">ann.body</p>
-		        View Dtails
+          <h2 class="h2mark containermarketing"><%= @announcements[2].ann_title %></h2>
+            <p class="h2para containermarketing"><%= truncate(@announcements[2].ann_body, length: 300, omission: "... (continued)") %></p>
+            <%= link_to "View Details", announcement_path(@announcements[2]), :class => "btn btn-default" %>
 
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">  
-          IMG circle
+          <%= image_tag(@announcements[1].image, class: "img-circle", width: "300", height: "300") %>
           <!-- truncate("Once upon a time in a world far far away", length: 17) -->
-          <h2 class="h2mark">ann.title</h2>
-            <p class="h2para">ann.body</p>
-            View Details
+          <h2 class="h2mark containermarketing"><%= @announcements[1].ann_title %></h2>
+            <p class="h2para containermarketing"><%= truncate(@announcements[1].ann_body, length: 300, omission: "... (continued)") %></p>
+            <%= link_to "View Details", announcement_path(@announcements[1]), :class => "btn btn-default" %>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          IMG circle
-          <h2 class="h2mark">ann.title</h2>
-            <p class="h2para">ann.body</p>
-            View Dtails
+          <%= image_tag(@announcements[0].image, class: "img-circle", width: "300", height: "300") %>
+          <h2 class="h2mark containermarketing"><%= @announcements[0].ann_title %></h2>
+            <p class="h2para containermarketing"><%= truncate(@announcements[0].ann_body, length: 300, omission: "... (continued)") %></p>
+            <%= link_to "View Details", announcement_path(@announcements[0]), :class => "btn btn-default" %>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+    
 
 
       <!-- START THE FEATURETTES -->
 
       <hr class="featurette-divider">
 
+      <h1 class='welcomeh1'>LATEST BLOG POSTS</h1>
+
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading"><span class="text-muted"> Oprah!</span></h2>
-          <p class="lead">blog.body, "(continued)"</p>
+          <h2 class="featurette-heading containermarketing"><%= @blogs[2].blog_title %><span class="text-muted"> Oprah!</span></h2>
+          <p class="lead containermarketing"><%= truncate(@blogs[2].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
-          Blog.Img
+          <%= image_tag(@blogs[2].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
         </div>
       </div>
 
@@ -109,11 +114,11 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading"><span class="text-muted"> Dog cuddles toy.</span></h2>
-          <p class="lead">blog.body,"(continued)"</p>
+          <h2 class="featurette-heading containermarketing"><%= @blogs[1].blog_title %><span class="text-muted"> Dog cuddles toy.</span></h2>
+          <p class="lead containermarketing"><%= truncate(@blogs[1].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[1]) %></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          Blog.Img
+          <%= image_tag(@blogs[1].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
         </div>
       </div>
 
@@ -121,11 +126,11 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading"><span class="text-muted"> He wants his money $$$.</span></h2>
-          <p class="lead">blog.body, "(continued)"</p>
+          <h2 class="featurette-heading containermarketing"><%= @blogs[0].blog_title %><span class="text-muted"> He wants his money $$$.</span></h2>
+          <p class="lead containermarketing"><%= truncate(@blogs[0].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
-          Blog.Img
+          <%= image_tag(@blogs[0].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
         </div>
       </div>
 
