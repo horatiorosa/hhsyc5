@@ -59,8 +59,12 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
+
+    
     <div class="container marketing">
-      
+<!-- 
+      <div id="test" style="border:1px solid red; width:100vw; height:300px; position:absolute; background-color:white; left:0 !important; margin-bottom:200px;"></div> -->
+
       <h1 class='welcomeh1'>LATEST EVENTS</h1>
 
       <!-- Three columns of text below the carousel -->
@@ -102,11 +106,11 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading containermarketing"><%= @blogs[2].blog_title %><span class="text-muted"> Oprah!</span></h2>
+          <h2 class="featurette-heading containermarketing"><%= @blogs[2].blog_title %><span class="text-muted"> Something!</span></h2>
           <p class="lead containermarketing"><%= truncate(@blogs[2].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
-          <%= image_tag(@blogs[2].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
+          <%= image_tag(@blogs[2].image, class: "featurette-image img-responsive center-block wel_img", data: { src: "holder.js/500x500/auto" }) %>
         </div>
       </div>
 
@@ -114,11 +118,11 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading containermarketing"><%= @blogs[1].blog_title %><span class="text-muted"> Dog cuddles toy.</span></h2>
+          <h2 class="featurette-heading containermarketing"><%= @blogs[1].blog_title %><span class="text-muted"> More Something.</span></h2>
           <p class="lead containermarketing"><%= truncate(@blogs[1].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[1]) %></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <%= image_tag(@blogs[1].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
+          <%= image_tag(@blogs[1].image, class: "featurette-image img-responsive center-block wel_img", data: { src: "holder.js/500x500/auto" }) %>
         </div>
       </div>
 
@@ -130,7 +134,7 @@
           <p class="lead containermarketing"><%= truncate(@blogs[0].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
-          <%= image_tag(@blogs[0].image, class: "featurette-image img-responsive center-block", data: { src: "holder.js/500x500/auto" }) %>
+          <%= image_tag(@blogs[0].image, class: "featurette-image img-responsive center-block wel_img", data: { src: "holder.js/500x500/auto" }) %>
         </div>
       </div>
 

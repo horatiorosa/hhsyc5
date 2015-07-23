@@ -17,6 +17,10 @@
 
  @import "bourbon";
  @import "base/base";
+ @import "base2/bootstrap-theme.css";
+ @import "base2/bootstrap.css";
+ @import "base2/bootstrap-theme.min.css";
+ @import "base2/bootstrap.min.css";
 
  $p-font-color: #FFF;
  $bg-wht-color: #e8e8e8;
@@ -71,16 +75,19 @@ body {
   padding-left: 0;
 }
 .navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 24px;
+  padding-left: 24px;
   border: 125, 97, 174;
-  border: 2px solid;
+  // border: 2px solid;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
   background: linear-gradient(-135deg, rgba(64, 64, 75, 0.8)) !important;
 
 }
+
+
+
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
 //   background-image: -webkit-linear-gradient(top,#080808 0,#0f0f0f 100%); 
@@ -486,6 +493,7 @@ img.navbar-brand {
 .blog_img ,.announcement_img {
   border-radius: 20px;
   margin: 30px 20%;
+
 }
 .img_background {
   background: rgba(0, 0, 0, 0.2);
@@ -554,4 +562,25 @@ body {
 
 .centeritems li {
   text-align: center !important;
+}
+
+.wel_img {
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #42423e;
+}
+
+.featurette-heading {
+  margin-top: 20px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  margin-top: 18%;
 }
