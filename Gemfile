@@ -37,7 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'bourbon'
 gem 'carrierwave'
-gem 'rmagick'
+gem 'rmagick', require: false
 # gem 'paperclip'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
