@@ -15,13 +15,15 @@ Rails.application.routes.draw do
   get 'cf_bio', to: 'static_pages#cf_bio'
   get 'rf_bio', to: 'static_pages#rf_bio'
   get 'hysyc_divisions', to: 'static_pages#hhsyc_divisions'
-  get 'map', to: 'static_pages#map'
+  get 'startchapter', to: 'static_pages#startchapter'
+  get 'joinhhsyc', to: 'static_pages#joinhhsyc'
   get 'ccd', to: 'static_pages#ccd'
   get 'red', to: 'static_pages#red'
   
   get 'projects', to: 'static_pages#projects'
   get 'ebobc', to: 'static_pages#ebobc'
   get 'juneteenth', to: 'static_pages#juneteenth'
+  get 'mdg', to: 'static_pages#mdg'
   get 'eteam', to: 'static_pages#eteam'
 
   get 'announcement/show/:id', to: 'announcements#publicshow', as: 'announcements/show'

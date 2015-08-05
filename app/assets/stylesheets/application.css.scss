@@ -17,23 +17,43 @@
 
  @import "bourbon";
  @import "base/base";
- @import "bootstrap-sprockets";
-@import "bootstrap";
-
+ @import "base2/bootstrap-theme.css";
+ @import "base2/bootstrap.css";
+ @import "base2/bootstrap-theme.min.css";
+ @import "base2/bootstrap.min.css";
 
  $p-font-color: #FFF;
- $bg-wht-color: #f0f0ef;
+ $bg-wht-color: #e8e8e8;
+ $shadow-color: #444444;
+ $text-shadow-color: #c9c9c9;
+ 
+
+
+// body:before {
+//   white-space: pre;
+//   font-family: monospace;
+//   content: "Error: File to import not found or unreadable: bourbon.\A        Load path: /Users/horatiorosa/Desktop/hhsyc5/app/assets/stylesheets\A         on line 18 of app/assets/stylesheets/application.css.scss\A \A 13:  \A 14:  *= require_self\A 15:  */\A 16: \A 17: \A 18:  @import \"bourbon\";\A 19:  @import \"base/base\";\A 20: \A 21:  $p-font-color: #FFF;\A 22:  $bg-wht-color: #f0f0ef;\A 23: "; }
 
 /* GLOBAL STYLES
 --------------------------------------------------
  Padding below the footer and lighter body text */
 
+ html {
+  overflow-x: hidden !important;
+}
+
+
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  background-color: rgba(41, 128, 185, 0.4) !important;
-  font-family: 'Raleway', sans-serif ;
+  background-color: rgba(52, 152, 219, 1.0) !important;
+  font-family: Raleway !important, sans-serif;
 }
+
+// p {
+//   font-family: Raleway !important, sans-serif;
+// }
+
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -46,7 +66,7 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
-  background-color: rgba(41, 128, 185, 0.5) !important;
+  
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -55,19 +75,21 @@ body {
   padding-left: 0;
 }
 .navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-  background-color: rgba(41, 128, 185, 0.5) !important;
+  padding-right: 24px;
+  padding-left: 24px;
   border: 125, 97, 174;
-  border: 2px solid;
+  // border: 2px solid;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
-  background: linear-gradient(-135deg, rgba(64, 64, 75, 0.8), rgba(29, 29, 34, 0.8)) !important;
+  background: linear-gradient(-135deg, rgba(64, 64, 75, 0.8)) !important;
 
 }
 
-// .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+
+
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
 //   background-image: -webkit-linear-gradient(top,#080808 0,#0f0f0f 100%); 
 //   background-image: -o-linear-gradient(top,#080808 0,#0f0f0f 100%);
 //   background-image: -webkit-gradient(linear,left top,left bottom,from(#080808),to(#0f0f0f)); 
@@ -77,7 +99,8 @@ body {
 //   -webkit-box-shadow: inset 0 3px 9px rgba(0, 66, 139, 0.8);
 //   box-shadow: inset 0 3px 9px rgba(0, 66, 139, 0.8);
 //   background-color: rgba(0, 66, 139, 0.8) !important;
-// }
+    background-color: white !important;
+}
 
 .btn-danger {
   margin-top: .5em;
@@ -90,10 +113,57 @@ img.navbar-brand {
   
 }
 
-.colorme {
-  background-color: rgba(41, 128, 185, 0.5) !important
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+  background-image: -webkit-linear-gradient(top,#fff 0, #fff 100%) !important;
+  box-shadow: none !important;
 
 }
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a {
+    color: rgb(41, 128, 185) !important;
+  }
+
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: red !important;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: red !important; 
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: rgb(41, 128, 185) !important;
+}
+
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+  background-image: -webkit-linear-gradient(top,#fff 0, #fff 100%) !important;
+  box-shadow: none !important;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a {
+    color: rgb(41, 128, 185) !important;
+  }
+
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: red !important;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: red !important; 
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: rgb(41, 128, 185) !important;
+}
+
+// .colorme {
+//   background-color: rgba(41, 128, 185, 0.5) !important
+
+// }
 
 
 
@@ -144,11 +214,12 @@ img.navbar-brand {
 
 /* Center align the text within the three columns below the carousel */
 
+
 .welcomeh1  {
   margin-top: -30px;
-  padding-bottom: 15px;
-  color: #2e2e2b;
-  text-shadow: 5px 5px 5px #a5a59f;
+  padding-bottom: 30px;
+  color: white;
+  text-shadow: 2px 2px 2px $bg-wht-color;
 }
 
 .marketing .col-lg-4 {
@@ -178,7 +249,16 @@ img.navbar-brand {
 
 .img-circle {
   box-shadow: 5px 5px 5px #42423e;
+  margin-top: 2px;
+
 }
+
+.containermarketing {
+  color: rgb(236, 240, 241) !important;
+  
+
+}
+
 /* Featurettes
 ------------------------- */
 
@@ -285,24 +365,15 @@ img.navbar-brand {
 
 // ********************************E-STARS************************
 
-/* And.. the CSS way */
+
 #3columns {
   -moz-column-count: 3;
   -moz-column-gap: 20px;
-  
   -webkit-column-count: 3;
   -webkit-column-gap: 20px;
-  
-  /* 
-  In the future, when browsers
-  get full support for this, we
-  won't need "browser prefixes"
-  (-webkit, -moz, -o, -ie), but
-  for now, it's safer to have
-  them.
-  */
   column-count: 3;
   column-gap: 20px;
+  text-align: center;
 }
 
 // ****************************Announcement Styles************************
@@ -337,113 +408,179 @@ img.navbar-brand {
   
 }
 
-// SPREE STYLE...................................//
-a{
-    font-family: courier new;
-    font-size: 16px;
-    text-decoration: none;
-  }
-#logo {
-    margin-bottom: 10px;
+/* eteam */
 
-    img {
-      width: 200px;
-      height: 200px
-    }
-   
-  }
- .form-group {
 
-  .form-control{
-    width: 400px;
-  }
-  .btn btn-primary{
-    width: 100px;
-  }
-  }
 
- .list-group{
-  .list-group-item{
-    border: 0px;
 
-  }
-  .list-group-item:hover{
-    background: none;
-    color: #428bca;
-  }
+//***************************** static_pages/About us ***************************//
+
+.page-header {
+  text-shadow: 2px 2px 2px $bg-wht-color;
+}
+
+//****************** static_pages ebobc *************************//
+
+.stylestatic h3 {
+  @extend .page-header;
+  font-size: 27px;
+  padding: 25px;
+  text-align: center;
+
+}
+
+.stylestatic p {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 25px;
+  background-color: rgba(250,251,251, 0.9);
+  border-radius: 5px;
+}
+
+.stylestatic h2 {
+  text-align: center;
+}
+
+.stylestatic h4 {
+  text-align: center;
+}
+
+//***************************** static_pages/company_structure ***************************//
+.stylestatic {
+  background-color: rgba(250,251,251, 0.9);
+  border-radius: 5px;
+
+  h5 {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px $bg-wht-color;
+    text-decoration: underline;
  }
-.col-md-12{
-  a{
-    font-family: courier new;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  a:hover :focus{
-    // background: white;
-  }
-}
-.panel-footer{
-  
-  border: none;
-}
-
-.slideout {
-    width: auto;
-    position: fixed;
-    top: 52px;
-    left: -270px;
-    height: 100%;
-    background: rgba(216, 212, 212, 0.9);
-    z-index: 100;
-}
-.slideout .menu-toggle {
-    position: absolute;
-    top: 12px;
-    right: 10px;
-    display: inline-block;
-    float:left;
-    padding: 6px 9px 5px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    line-height: 1;
-    color: #999;
-    text-decoration: none;
-    vertical-align: top;
-}
-  .slideout .menu-toggle:hover {
-    color: #fff;
-}
-.slideout ul {
-    margin-top: 52px;
-    list-style: none;
-    font-weight: 300;
-}
-.slideout ul li a {
-    position: relative;
-    display: block;
+  ul {
     padding: 10px;
-    color: #000;
-    text-decoration: none;
+  }
+  li {
+    font-size: 17px;
+    padding: 5px;
+    //text-align: center;
+    // list-style: square;
+  }
 }
-.slideout ul li a:hover {
-    background: #000;
-    color: #fff;
+
+//*********************************** publicannindex & publicblogindex ***********************//
+
+.intro-text {
+  font-size: 30px;
+  text-shadow: 2px 2px 2px $text-shadow-color;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px $shadow-color;
+  background: -webkit-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* Standard syntax */
 }
-.slideout ul li a i {
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    
-}
-.header {
-    padding: 11px;
+
+.breadcrumb {
+  box-shadow: 3px 3px 3px $shadow-color;
 
 }
-.header .menu-toggle {
-    line-height: 30px;
-    font-size: 1.2em;
-    text-decoration: none;
+
+
+//********************* annoumcnemtn/ show & blog/show  **************************//
+
+.blog_img ,.announcement_img {
+  border-radius: 20px;
+  margin: 30px 20%;
+
 }
-.header .menu-toggle:hover {
-    color: #fff;
+.img_background {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+//  .announcement_img{
+//   @extend .blog_img;
+//   margin-top: 40px
+// }
+//===================================== adminfisher =====================================//
+//******************** announcement/new (form) & post nwe blog (form)  *********************//
+form.new_announcement, form.new_blog {
+  width: 80%;
+  margin: auto;
+}
+
+#announcement_ann_title, #announcement_ann_body, #blog_blog_body, #blog_blog_title {
+  box-shadow: 2px 2px 2px $shadow-color;
+}
+
+//******************** announcment/index (all announcments) & blog/index (all blog posts) **********************//
+//table//
+#ann_list, #blg_list {
+  width: 80%; 
+  margin: auto;
+}
+//tr//
+.ann_tbl, .blg_tbl {
+  height: 30px;
+}
+//td//
+.ann_tbl_title, .blg_tbl_title {
+  width: 50%;
+  font-weight: bold;
+}
+.ann_tbl_date, .blg_tbl_date {
+  width: 25%;
+}
+.ann_tbl_view, .ann_tbl_delete, .ann_tbl_edit, .blg_tbl_view, .blg_tbl_delete, .blg_tbl_edit {
+  width: 8%;
+}
+
+//*********************** mission *******************************//
+.mission_ul {
+  width: 80%;
+  padding: 0;
+  margin: 20px 10%;
+}
+// .mission_list {
+//   text-align: left;
+// }
+//********************* Universal styling *********************//
+
+.page-header {
+  text-shadow: 2px 2px 2px $bg-wht-color;
+
+}
+
+body {
+  font-family: Raleway !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.centeritems li {
+  text-align: center !important;
+}
+
+.wel_img {
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #42423e;
+}
+
+.featurette-heading {
+  margin-top: 20px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  margin-top: 18%;
 }

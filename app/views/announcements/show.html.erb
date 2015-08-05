@@ -21,8 +21,8 @@
             <div class="col-md-9">
                 <div class="stylestatic">
                     <div>
-                        <div >
-                           <%= image_tag @announcement.image_url(:medium).to_s %>    
+                        <div class="img_background" >
+                           <%= image_tag( @announcement.image_url(:medium).to_s, :class => "announcement_img") %>    
                         </div>
                         <h3 >
                             <%= @announcement.ann_title %>

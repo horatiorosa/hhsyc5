@@ -20,7 +20,10 @@ class StaticPagesController < ApplicationController
   def hhsyc_divisions
   end
 
-  def map
+  def startchapter
+  end
+
+  def joinhhsyc
   end
 
   def ccd
@@ -36,6 +39,9 @@ class StaticPagesController < ApplicationController
   end
 
   def juneteenth
+  end
+
+  def mdg
   end
 
   def eteam

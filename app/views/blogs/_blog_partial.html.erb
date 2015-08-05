@@ -1,14 +1,14 @@
 	<div >
      <%= image_tag @blog.image_url(:medium).to_s %>    
-  </div>
+    </div>
 
 	<h3 >
 		<%= @blog.blog_title %>
 	</h3>
-	<p >
+	<p>
 		Submitted <%= time_ago_in_words(@blog.created_at) %> ago.
 	</p>
 
 	<p >
     <%= simple_format(@blog.blog_body) %>
-  </p>
+    </p>

@@ -4,8 +4,8 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">HHSYC - Company Structure
-                    <!-- <small>founded in 2001</small> -->
+                <h1 class="page-header">HHSYC
+                    <small>founded in 2001</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><%=link_to 'Home', welcome_path %>
@@ -22,36 +22,37 @@
                 <%= render 'shared/sidebar_column' %>
             <!-- Content Column -->
             <div class="col-md-9">
-            	<div class="stylestatic">
-	             	<!-- <h2> text </h2> -->
-
-	             	<ul>
-	             		<h5>BOARD OF DIRECTORS</h5>
-	             	<li>CHARLES FISHER, Founder &nbsp; &nbsp <%= link_to "(bio)", cf_bio_path %></li>
-	             	<li>Jermaine LaMont, Co-Program Director </li>
-                <li>Latifah Johnson, Co-Program Director</li>
-                <li>Michelle M. Garcia, Director, Latin Division</li>   
+            	<div class="stylestatic centeritems">
+	             	<h3> Company Structure </h3>
+	             	<ul class="list-group">
+	             		<h5 class="list-group-item">BOARD OF DIRECTORS</h5>
+	             	<li class="list-group-item">CHARLES FISHER, Founder &nbsp; &nbsp <%= link_to "(bio)", cf_bio_path %></li>
+	             	<li class="list-group-item">Pearl Jones, Chairman</li>
+                    <li class="list-group-item">Albert Benjamin</li>
+                    <li class="list-group-item">Vanessa Edwards-El</li> 
+                    <li class="list-group-item">Steven M. Graham</li>
+                    <li class="list-group-item">Det. Victor Logan</li>
+                    <li class="list-group-item">Tyrone "Fly Ty" Williams</li>  
               </ul>
-              <br><br>
-              	<ul>
-	             		<h5>ADVISORY BOARD</h5>  
-		             	<li>"The Shark" Daymond John  &nbsp; &nbsp <%= link_to "(bio)", 'http://daymondjohn.com/about', target: 'blank'%></li>
-		             	<li>Denise Adams</li>
-	                <li>Marva Allen</li>
-	                <li>Marilyn Artis</li>
-	                <li>Dr. Marc Johnson</li>
-	                <li>Quincy Jones</li>
-	                <li>Dawn Kelly </li>
-	                <li>Jose Nino</li>
-	                <li>Russell Simmons</li>
-	                <li>Leah Wilcox, NBA</li>
+              	<ul >
+	             		<h5 class="list-group-item">ADVISORY BOARD</h5>  
+		             	<li class="list-group-item">"The Shark" Daymond John  &nbsp; &nbsp <%= link_to "(bio)", 'http://daymondjohn.com/about', target: 'blank'%></li>
+		             	<li class="list-group-item">Denise Adams</li>
+    	                <li class="list-group-item">Marva Allen</li>
+    	                <li class="list-group-item">Marilyn Artis</li>
+    	                <li class="list-group-item">Dr. Marc Johnson</li>
+    	                <li class="list-group-item">Quincy Jones</li>
+    	                <li class="list-group-item">Dawn Kelly </li>
+    	                <li class="list-group-item">Jose Nino</li>
+    	                <li class="list-group-item">Russell Simmons</li>
+    	                <li class="list-group-item">Leah Wilcox, NBA</li>
               </ul>
-              <ul>
-	             		<h5>STAFF</h5>
-		             	<li>RANDY FISHER, Executive Director &nbsp; &nbsp <%= link_to "(bio)", rf_bio_path %></li>
-		             	<li>Jermaine LaMont, Co-Program Director </li>
-	                <li>Latifah Johnson, Co-Program Director </li>
-	                <li>MMichelle M. Garcia, Director, Latin Division </li>
+              <ul class="list-group">
+	             		<h5 class="list-group-item">STAFF</h5>
+		             	<li class="list-group-item">RANDY FISHER, Executive Director &nbsp; &nbsp <%= link_to "(bio)", rf_bio_path %></li>
+		             	<li class="list-group-item">Jermaine LaMont, Co-Program Director </li>
+    	                <li class="list-group-item">Latifah Johnson, Co-Program Director </li>
+    	                <li class="list-group-item">Michelle M. Garcia, Director, Latin Division </li>
               </ul>
 	              
 			        </div>	
