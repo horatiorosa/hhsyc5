@@ -41,6 +41,7 @@ gem 'rmagick'
 # gem 'paperclip'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
+gem 'tinymce-rails'
 
 
 # Use Capistrano for deployment

@@ -38,18 +38,15 @@
                     <%= link_to "View Details", blog_path(blog), :class => "btn btn-default" %><% end %>
                     <hr>
                 </div>
-                
-                <div class="col-lg-12 text-center">
-                    <ul class="pager">
-                        <li class="previous"><a href="#">&larr; Older</a>
-                        </li>
-                        <li class="next"><a href="#">Newer &rarr;</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
         <!-- /.row -->
 
         <hr class="featurette-divider">
-   
+
+    <nav>
+      <ul class="paginate-block pagination-sm">
+        <li><%= will_paginate @announcements, renderer: BootstrapPagination::Rails, next_label: "Older", previous_label: "Newer", page_links: false %>
+        </li>
+      </ul>
+    </nav>

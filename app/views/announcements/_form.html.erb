@@ -1,3 +1,4 @@
+<%= tinymce %>
 <%= form_for(@announcement) do |f| %>
   <% if @announcement.errors.any? %>
     <div id="error_explanation">
@@ -13,7 +14,7 @@
     <%= f.file_field :image, placeholder: "Upload a photo here (or leave blank to upload an image later" %>
     <%= f.hidden_field :image_cache %>
     <%= f.text_field :ann_title, placeholder: "Enter your announcement or event title here" %>
-    <%= f.text_area :ann_body, placeholder: "Enter your announcement or event details here", size: "50x20" %>
+    <%= f.text_area :ann_body, class: "tinymce", placeholder: "Enter your announcement or event details here", size: "50x20" %>
 
   <div class="actions">
     <%= f.submit %>

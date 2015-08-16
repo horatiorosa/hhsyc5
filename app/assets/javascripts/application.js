@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require tinymce-jquery
 // require turbolinks
 //= require_tree .
 

@@ -19,7 +19,7 @@ class BlogsController < ApplicationController
   end
 
   def publicblogindex
-    @blogs = Blog.all.order('created_at DESC')
+    @blogs = Blog.all.order('created_at DESC').paginate(page: params[:page], per_page: 2)
   end
 
   # GET /blogs/new
