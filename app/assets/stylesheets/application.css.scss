@@ -108,9 +108,9 @@ body {
 
 img.navbar-brand {
   padding: 0px !important;
-  max-height: 50px;
-  max-width: 50px;
-  
+  height: auto;
+  width: 85px;
+    
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
@@ -219,7 +219,7 @@ img.navbar-brand {
   margin-top: -30px;
   padding-bottom: 30px;
   color: white;
-  text-shadow: 2px 2px 2px $bg-wht-color;
+  // text-shadow: 2px 2px 2px $bg-wht-color;
 }
 
 .marketing .col-lg-4 {
@@ -248,7 +248,7 @@ img.navbar-brand {
 }
 
 .img-circle {
-  box-shadow: 5px 5px 5px #42423e;
+  // box-shadow: 5px 5px 5px #42423e;
   margin-top: 2px;
 
 }
@@ -265,7 +265,7 @@ img.navbar-brand {
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
   border-bottom: 1px solid rgba(0,0,0,0.1);
-  box-shadow: 0 1px 0 rgba(247,247,246,1);
+  // box-shadow: 0 1px 0 rgba(247,247,246,1);
 }
 
 /* Thin out the marketing headings */
@@ -273,7 +273,7 @@ img.navbar-brand {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
-  text-shadow: 2px 2px 2px #54544b;
+  // text-shadow: 2px 2px 2px #54544b;
 }
 
 
@@ -415,14 +415,14 @@ img.navbar-brand {
 
 //***************************** static_pages/About us ***************************//
 
-.page-header {
-  text-shadow: 2px 2px 2px $bg-wht-color;
-}
+// .page-header {
+//   text-shadow: 2px 2px 2px $bg-wht-color;
+// }
 
 //****************** static_pages ebobc *************************//
 
 .stylestatic h3 {
-  @extend .page-header;
+  // @extend .page-header;
   font-size: 27px;
   padding: 25px;
   text-align: center;
@@ -454,7 +454,7 @@ img.navbar-brand {
     font-size: 20px;
     padding: 5px;
     text-align: center;
-    text-shadow: 2px 2px 2px $bg-wht-color;
+    // text-shadow: 2px 2px 2px $bg-wht-color;
     text-decoration: underline;
  }
   ul {
@@ -472,20 +472,20 @@ img.navbar-brand {
 
 .intro-text {
   font-size: 30px;
-  text-shadow: 2px 2px 2px $text-shadow-color;
+  // text-shadow: 2px 2px 2px $text-shadow-color;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 3px 3px 3px $shadow-color;
+  // box-shadow: 3px 3px 3px $shadow-color;
   background: -webkit-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #bbbbbb, #ededed, #fafafa, #FFF, #fafafa, #ededed, #bbbbbb); /* Standard syntax */
 }
 
-.breadcrumb {
-  box-shadow: 3px 3px 3px $shadow-color;
+// .breadcrumb {
+//   box-shadow: 3px 3px 3px $shadow-color;
 
-}
+// }
 
 
 //********************* annoumcnemtn/ show & blog/show  **************************//
@@ -548,7 +548,7 @@ form.new_announcement, form.new_blog {
 //********************* Universal styling *********************//
 
 .page-header {
-  text-shadow: 2px 2px 2px $bg-wht-color;
+  // text-shadow: 2px 2px 2px $bg-wht-color;
 
 }
 
@@ -566,7 +566,7 @@ body {
 
 .wel_img {
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #42423e;
+  // box-shadow: 5px 5px 5px #42423e;
 }
 
 .featurette-heading {
@@ -575,7 +575,7 @@ body {
 
 .navbar-nav>li>a {
   padding-top: 24px !important;
-  padding-bottom: 24px !important;
+  font-size: medium;
 }
 
 .btn-danger {
