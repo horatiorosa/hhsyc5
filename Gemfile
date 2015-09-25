@@ -37,7 +37,7 @@ gem 'devise'
 gem 'bourbon'
 gem 'carrierwave'
 gem 'rmagick'
-# gem 'paperclip'
+gem 'paperclip'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
 
