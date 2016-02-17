@@ -74,6 +74,13 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
+
+.navbar-wrapper {
+  .container {
+    background-color: rgb(236, 240, 241);
+  }
+  
+}
 // .navbar-wrapper .navbar {
 //   padding-right: 24px;
 //   padding-left: 24px;
@@ -176,38 +183,36 @@ img.navbar-brand {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
-  height: 700px;
-  margin-bottom: 60px;
-  background-size: cover;
-}
+// .carousel {
+//   height: 700px;
+//   margin-bottom: 60px;
+//   background-size: cover;
+// }
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
+// .carousel-caption {
+//   z-index: 10;
+// }
 
 /* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 700px;
-  background-color: #777;
+.carousel {
+  height: 500px;
+    .item {
+      height: 500px;
+      // margin-left: 10%;
+    }
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   height: 500px;
+  img {
+    // width: 15em;
+  }
 }
 
-.item {
-  max-width: 100%;
-  // margin-left: 20%;
-}
-
-.carousel-inner img { 
-  max-height : 100%;
-  width: 15em;
-}
 
 
 /* MARKETING CONTENT
@@ -217,20 +222,17 @@ img.navbar-brand {
 
 
 .welcomeh1  {
-  margin-top: -30px;
-  padding-bottom: 30px;
+  margin-top: 13px;
+  padding: 12px;
   color: white;
-  // text-shadow: 2px 2px 2px $bg-wht-color;
+  text-align: center;
+  font-size: xx-large;
 }
 
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
 }
-
-// .farLeft, .farRight, .middle {
-//   background-color: $bg-wht-color;
-// }
 
 .marketing h2 {
   font-weight: normal;
@@ -477,7 +479,7 @@ img.navbar-brand {
   }
 }
 
-//*********************************** publicannindex & publicblogindex ***********************//
+//*********** publicannindex & publicblogindex ***********************//
 
 .intro-text {
   font-size: 30px;
@@ -497,7 +499,7 @@ img.navbar-brand {
 // }
 
 
-//********************* annoumcnemtn/ show & blog/show  **************************//
+//******** announcment/show & blog/show  ***********************//
 
 .blog_img ,.announcement_img {
   border-radius: 20px;
@@ -512,8 +514,8 @@ img.navbar-brand {
 //   @extend .blog_img;
 //   margin-top: 40px
 // }
-//===================================== adminfisher =====================================//
-//******************** announcement/new (form) & post nwe blog (form)  *********************//
+//== adminfisher =====================================//
+//******* announcement/new (form) & post nwe blog (form)  *********//
 form.new_announcement, form.new_blog {
   width: 80%;
   margin: auto;
@@ -523,7 +525,7 @@ form.new_announcement, form.new_blog {
 //   box-shadow: 2px 2px 2px $shadow-color;
 // }
 
-//******************** announcment/index (all announcments) & blog/index (all blog posts) **********************//
+// ****** announcment/index & blog/index ******//
 //table//
 #ann_list, #blg_list {
   width: 80%; 
@@ -554,7 +556,7 @@ form.new_announcement, form.new_blog {
 // .mission_list {
 //   text-align: left;
 // }
-//********************* Universal styling *********************//
+//********************* Universal styling *********************//         
 
 .bold {
   font-weight: bold;

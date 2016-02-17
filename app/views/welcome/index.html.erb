@@ -9,6 +9,7 @@
                           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                           <li data-target="#myCarousel" data-slide-to="1"></li>
                           <li data-target="#myCarousel" data-slide-to="2"></li>
+                          <li data-target="#myCarousel" data-slide-to="3"></li>
                       </ol>
 
                       <!-- Wrapper for slides -->
@@ -35,6 +36,16 @@
                           </div>
                           <div class="item">
                               <img class="img-responsive img-full" src="assets/source_fishers.jpg" alt="Third slide">
+                              <!-- <div class="container">
+                                  <div class="carousel-caption">
+                                    <h1>One more for good measure.</h1>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                                  </div>
+                              </div> -->
+                          </div>
+                          <div class="item">
+                              <img class="img-responsive img-full" src="assets/black_history1.jpg" alt="Third slide">
                               <!-- <div class="container">
                                   <div class="carousel-caption">
                                     <h1>One more for good measure.</h1>
@@ -71,7 +82,7 @@
     
     <div class="container marketing">
             
-      <h1 class='welcomeh1'>LATEST EVENTS</h1>
+      <h1 class='welcomeh1'>CURRENT EVENTS</h1>
 
       <!-- Three columns of text below the carousel -->
 
@@ -106,11 +117,11 @@
 
       <hr class="featurette-divider">
 
-      <h1 class='welcomeh1'>LATEST BLOG POSTS</h1>
+      <h1 class='welcomeh1'>OUR BLOG, OUR THOUGHTS</h1>
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading containermarketing"><%= @blogs[2].blog_title %><span class="text-muted"> Something!</span></h2>
+          <h2 class="featurette-heading containermarketing"><%= @blogs[2].blog_title %><!-- <span class="text-muted"> Something!</span> --></h2>
           <p class="lead containermarketing"><%= truncate(@blogs[2].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
@@ -122,7 +133,7 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading containermarketing"><%= @blogs[1].blog_title %><span class="text-muted"> More Something.</span></h2>
+          <h2 class="featurette-heading containermarketing"><%= @blogs[1].blog_title %><!-- <span class="text-muted"> More Something.</span> --></h2>
           <p class="lead containermarketing"><%= truncate(@blogs[1].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[1]) %></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
@@ -134,7 +145,7 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading containermarketing"><%= @blogs[0].blog_title %><span class="text-muted"> He wants his money $$$.</span></h2>
+          <h2 class="featurette-heading containermarketing"><%= @blogs[0].blog_title %><!-- <span class="text-muted"> He wants his money $$$.</span> --></h2>
           <p class="lead containermarketing"><%= truncate(@blogs[0].blog_body, length: 300) %><%= link_to "(continued)", blog_path(@blogs[2]) %></p>
         </div>
         <div class="col-md-5">
