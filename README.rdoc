@@ -1,12 +1,11 @@
-== README
 
 
 * Ruby version: ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]
 
 Re-design of the HHSYC.ORG website on a Rails framework, using Bootstrap, Devise for Admin, Carrierwave for images and Bourbon.
 
+Please feel free to poke around the admin dashboard CMS by going to the custom route http://hr-hhsyc-redesign.herokuapp.com/adminfisher. email: guest@email.com, pw: 11111111
 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
