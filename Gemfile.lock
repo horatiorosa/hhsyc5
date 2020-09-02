@@ -191,7 +191,9 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  json (>= 1.8.6)
   pg
+  rack (~> 1.6)
   rails (= 4.2.4)
   rails_12factor
   rmagick
@@ -205,6 +207,9 @@ DEPENDENCIES
   web-console (~> 2.0)
   will_paginate (~> 3.0.7)
   will_paginate-bootstrap
+
+RUBY VERSION
+   ruby 2.4.6p354
 
 BUNDLED WITH
    1.17.3

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.4.6"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -41,6 +41,8 @@ gem 'rmagick'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
 gem 'tinymce-rails'
+gem "json", ">= 1.8.6"
+gem "rack", "~> 1.6"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
